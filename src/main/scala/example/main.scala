@@ -21,6 +21,7 @@ object Main {
 
         var answer = StdIn.readLine()
         println(answer)
+        print(textLine)
 
     }
 
