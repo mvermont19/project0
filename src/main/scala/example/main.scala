@@ -15,55 +15,58 @@ object Main {
     def main(args: Array[String]){
         val story: List[List[String]] = List(List(""))
         val bufferedSource = Source.fromFile("C:/Users/matth/revature/project0/src/main/csv/test.csv")
-        for(lines <- bufferedSource.getLines()){
+        for(line <- bufferedSource.getLines){
             //move lines into mongoDB
-            val line = lines.split(",")
-            //println(lines)
-            story ++ line
+            //println(line)
+            //println(line.split(","))
+            //var brokenUpLine = line.split(",").map(_.trim())
+            //println(line)
+            //story ++ brokenUpLine
         }
+        //println(story)
         bufferedSource.close()
 
         var textLine: Int = 0
         var deadLine: Int = 999 //will set deadLine when story is finished
 
-        while(textLine != deadLine){
-            //Print description 
-            printText(textLine)
+        // while(textLine != deadLine){
+        //     //Print description 
+        //     printText(textLine)
 
-            var validAnswer: Boolean = false
-            var answer: Int = 0
+        //     var validAnswer: Boolean = false
+        //     var answer: Int = 0
 
-            while(!validAnswer){
-                //Inform player of options
-                printOptions(textLine)
+        //     while(!validAnswer){
+        //         //Inform player of options
+        //         printOptions(textLine)
 
-                //Once answer is chosen, read the result and make sure it is valid
-                var input = getPlayerInput() match {
-                    case Success(a) => {
-                        if(a == ""){
-                            println("Please give an answer")
-                        }
-                        else{
-                            var num: Char = a.charAt(0)
-                            if(num.isDigit && (a.toInt == 1 || a.toInt == 2)){
-                                validAnswer = true
-                                answer = a.toInt
-                            }else{
-                                println("Not a valid answer. Try again")
-                            }
-                        }
-                    }
-                    case Failure(exception) => {
-                        println("Not a valid answer. Try again")
-                        throw exception
-                    }
-                }
-            }
+        //         //Once answer is chosen, read the result and make sure it is valid
+        //         var input = getPlayerInput() match {
+        //             case Success(a) => {
+        //                 if(a == ""){
+        //                     println("Please give an answer")
+        //                 }
+        //                 else{
+        //                     var num: Char = a.charAt(0)
+        //                     if(num.isDigit && (a.toInt == 1 || a.toInt == 2)){
+        //                         validAnswer = true
+        //                         answer = a.toInt
+        //                     }else{
+        //                         println("Not a valid answer. Try again")
+        //                     }
+        //                 }
+        //             }
+        //             case Failure(exception) => {
+        //                 println("Not a valid answer. Try again")
+        //                 throw exception
+        //             }
+        //         }
+        //     }
 
-            //println(answer)
-            var newLine: Int = printResults(textLine, answer.toInt)
-            textLine = newLine
-        }
+        //     //println(answer)
+        //     var newLine: Int = printResults(textLine, answer.toInt)
+        //     textLine = newLine
+        // }
 
         println("You are now dead")
 
@@ -109,7 +112,7 @@ object Main {
     }
 
     /**
-      * This determines if the players answer if valid or not
+      * This helps determine if the players answer if valid or not
       */
     def getPlayerInput(): Try[String] = {
         Try(StdIn.readLine())
@@ -124,7 +127,7 @@ object Main {
       * @return
       */
     def getResults(textLine: Int, answer: Int): String = {
-        "This is a test result,999"
+        "This is a test result:999"
     }
 
     /**
@@ -137,7 +140,7 @@ object Main {
       */
     def printResults(textLine: Int, answer: Int): Int = {
         var results: String = getResults(textLine, answer)
-        val res = results.split(",")
+        val res = results.split(":")
         println(res(0))
         res(1).toInt
     }

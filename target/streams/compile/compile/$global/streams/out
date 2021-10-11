@@ -1,13 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\matth\revature\project0\src\main\scala\example\main.scala:43:43: value charAt is not a member of Boolean[0m
-[0m[[0m[31merror[0m] [0m[0m                        var num: Char = a.charAt(0)[0m
-[0m[[0m[31merror[0m] [0m[0m                                          ^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Users\matth\revature\project0\src\main\scala\example\main.scala:44:46: value toInt is not a member of Boolean[0m
-[0m[[0m[31merror[0m] [0m[0m                        if(num.isDigit && (a.toInt == 1 || a.toInt == 2)){[0m
-[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Users\matth\revature\project0\src\main\scala\example\main.scala:44:62: value toInt is not a member of Boolean[0m
-[0m[[0m[31merror[0m] [0m[0m                        if(num.isDigit && (a.toInt == 1 || a.toInt == 2)){[0m
-[0m[[0m[31merror[0m] [0m[0m                                                             ^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Users\matth\revature\project0\src\main\scala\example\main.scala:46:40: value toInt is not a member of Boolean[0m
-[0m[[0m[31merror[0m] [0m[0m                            answer = a.toInt[0m
-[0m[[0m[31merror[0m] [0m[0m                                       ^[0m
-[0m[[0m[31merror[0m] [0m[0mfour errors found[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\matth\revature\project0\src\main\scala\example\main.scala:22:31: class Array takes type parameters[0m
+[0m[[0m[31merror[0m] [0m[0m            var brokenUpLine: Array = line.split(",").map(_.trim())[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
