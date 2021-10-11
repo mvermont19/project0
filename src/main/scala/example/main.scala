@@ -2,6 +2,10 @@ package example
 
 import scala.io._
 import scala.collection._
+import java.io._
+import _root_.scala.util.Success
+import _root_.scala.util.Failure
+import scala.util.Try
 
 /**
   * The goal of the game will be to make it home safely after waking up in a dark 
@@ -9,10 +13,13 @@ import scala.collection._
   */
 object Main {
     def main(args: Array[String]){
+        val story: List[List[String]] = List(List(""))
         val bufferedSource = Source.fromFile("C:/Users/matth/revature/project0/src/main/csv/test.csv")
         for(lines <- bufferedSource.getLines()){
             //move lines into mongoDB
+            val line = lines.split(",")
             //println(lines)
+            story ++ line
         }
         bufferedSource.close()
 
@@ -23,12 +30,36 @@ object Main {
             //Print description 
             printText(textLine)
 
-            //Inform player of options
-            printOptions(textLine)
+            var validAnswer: Boolean = false
+            var answer: Int = 0
 
-            //Once answer is chosen, read the result
-            //return new textLine and set it
-            var answer = StdIn.readLine()
+            while(!validAnswer){
+                //Inform player of options
+                printOptions(textLine)
+
+                //Once answer is chosen, read the result and make sure it is valid
+                var input = getPlayerInput() match {
+                    case Success(a) => {
+                        if(a == ""){
+                            println("Please give an answer")
+                        }
+                        else{
+                            var num: Char = a.charAt(0)
+                            if(num.isDigit && (a.toInt == 1 || a.toInt == 2)){
+                                validAnswer = true
+                                answer = a.toInt
+                            }else{
+                                println("Not a valid answer. Try again")
+                            }
+                        }
+                    }
+                    case Failure(exception) => {
+                        println("Not a valid answer. Try again")
+                        throw exception
+                    }
+                }
+            }
+
             //println(answer)
             var newLine: Int = printResults(textLine, answer.toInt)
             textLine = newLine
@@ -65,11 +96,23 @@ object Main {
         List("a", "b")
     }
 
+    /**
+      * This prints out the options for the user to decide what to do
+      *
+      * @param textLine
+      */
     def printOptions(textLine: Int) {
         var options = checkOptions(textLine)
         println("Would you like to: (Press 1 or 2)")
-        println(options(0))
-        println(options(1))
+        println("1. " + options(0))
+        println("2. " + options(1))
+    }
+
+    /**
+      * This determines if the players answer if valid or not
+      */
+    def getPlayerInput(): Try[String] = {
+        Try(StdIn.readLine())
     }
 
     /**
