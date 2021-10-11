@@ -1,4 +1,19 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\matth\revature\project0\src\main\scala\example\main.scala:5:9: not found: value file[0m
-[0m[[0m[31merror[0m] [0m[0m        file f = new File()[0m
-[0m[[0m[31merror[0m] [0m[0m        ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\matth\revature\project0\src\main\scala\example\main.scala:11:50: invalid escape character[0m
+[0m[[0m[31merror[0m] [0m[0m        val bufferedSource = Source.fromFile("C:\Users\matth\revature\project0\src\main\csvtest.csv")[0m
+[0m[[0m[31merror[0m] [0m[0m                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\matth\revature\project0\src\main\scala\example\main.scala:11:56: invalid escape character[0m
+[0m[[0m[31merror[0m] [0m[0m        val bufferedSource = Source.fromFile("C:\Users\matth\revature\project0\src\main\csvtest.csv")[0m
+[0m[[0m[31merror[0m] [0m[0m                                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\matth\revature\project0\src\main\scala\example\main.scala:11:71: invalid escape character[0m
+[0m[[0m[31merror[0m] [0m[0m        val bufferedSource = Source.fromFile("C:\Users\matth\revature\project0\src\main\csvtest.csv")[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\matth\revature\project0\src\main\scala\example\main.scala:11:80: invalid escape character[0m
+[0m[[0m[31merror[0m] [0m[0m        val bufferedSource = Source.fromFile("C:\Users\matth\revature\project0\src\main\csvtest.csv")[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                               ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\matth\revature\project0\src\main\scala\example\main.scala:11:84: invalid escape character[0m
+[0m[[0m[31merror[0m] [0m[0m        val bufferedSource = Source.fromFile("C:\Users\matth\revature\project0\src\main\csvtest.csv")[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\matth\revature\project0\src\main\scala\example\main.scala:11:89: invalid escape character[0m
+[0m[[0m[31merror[0m] [0m[0m        val bufferedSource = Source.fromFile("C:\Users\matth\revature\project0\src\main\csvtest.csv")[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m6 errors found[0m

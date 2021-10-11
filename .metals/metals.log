@@ -25,3 +25,34 @@ org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request window/showMessageRequ
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
 [0m
+[0m2021.10.11 11:23:42 INFO  Started: Metals version 0.10.7 in workspace 'C:\Users\matth\revature\project0' for client Visual Studio Code 1.61.0.[0m
+[0m2021.10.11 11:23:42 INFO  time: initialize in 0.4s[0m
+[0m2021.10.11 11:23:43 WARN  Build server is not auto-connectable.[0m
+[0m2021.10.11 11:23:43 WARN  no build target for: C:\Users\matth\revature\project0\src\main\scala\example\Hello.scala[0m
+[0m2021.10.11 11:23:43 INFO  skipping build import with status 'Requested'[0m
+[0m2021.10.11 11:23:46 INFO  no build target: using presentation compiler with only scala-library: 2.12.15[0m
+[0m2021.10.11 11:23:47 INFO  time: code lens generation in 3.1s[0m
+[0m2021.10.11 11:23:47 INFO  time: code lens generation in 4.14s[0m
+[0m2021.10.11 11:24:11 WARN  no build target for: C:\Users\matth\revature\project0\src\main\scala\example\main.scala[0m
+Oct 11, 2021 11:24:28 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9
+[0m2021.10.11 11:24:29 WARN  no build target for: C:\Users\matth\revature\project0\src\main\scala\example\main.scala[0m
+[0m2021.10.11 11:25:10 WARN  no build target for: C:\Users\matth\revature\project0\src\main\scala\example\main.scala[0m
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in Array[<error>]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 53, 53, 68)
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in Array[<error>]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 53, 53, 62)
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in Array[<error>]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 53, 53, 63)
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in Array[String]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 53, 53, 66)
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in Array[String]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 53, 53, 66)
+[0m2021.10.11 11:29:23 WARN  no build target for: C:\Users\matth\revature\project0\src\main\scala\example\main.scala[0m
+[0m2021.10.11 11:29:48 WARN  no build target for: C:\Users\matth\revature\project0\src\main\scala\example\main.scala[0m
+Oct 11, 2021 11:41:38 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 619
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in Array[String]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 53, 53, 66)
+[0m2021.10.11 11:41:57 WARN  no build target for: C:\Users\matth\revature\project0\src\main\scala\example\main.scala[0m
+[0m2021.10.11 11:50:12 WARN  no build target for: C:\Users\matth\revature\project0\src\main\scala\example\main.scala[0m
+[0m2021.10.11 11:54:00 WARN  no build target for: C:\Users\matth\revature\project0\src\main\scala\example\main.scala[0m
+[0m2021.10.11 11:55:35 WARN  no build target for: C:\Users\matth\revature\project0\src\main\scala\example\main.scala[0m
+Oct 11, 2021 11:55:46 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1559
+Oct 11, 2021 11:55:56 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
