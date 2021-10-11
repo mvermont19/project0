@@ -7,3 +7,21 @@ Oct 08, 2021 4:51:21 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notif
 INFO: Unsupported notification method: $/setTrace
 Oct 08, 2021 4:52:29 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+[0m2021.10.08 16:53:02 WARN  no build target for: C:\Users\matth\revature\project0\src\main\scala\example\Hello.scala[0m
+[0m2021.10.08 16:53:05 INFO  no build target: using presentation compiler with only scala-library: 2.12.15[0m
+[0m2021.10.08 16:53:07 INFO  time: code lens generation in 5.02s[0m
+[0m2021.10.08 16:53:21 WARN  no build target for: C:\Users\matth\revature\project0\src\main\scala\example\Hello.scala[0m
+[0m2021.10.08 17:06:55 INFO  shutting down Metals[0m
+[0m2021.10.08 17:06:55 ERROR Unexpected error initializing server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request window/showMessageRequest failed with message: Canceled
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
