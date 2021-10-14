@@ -13,8 +13,10 @@ import scala.util.Try
   */
 object Main {
     def main(args: Array[String]){
-        val story: List[List[String]] = List(List(""))
-        val bufferedSource = Source.fromFile("C:/Users/matth/revature/project0/src/main/csv/test.csv")
+        //val story: List[List[String]] = List(List(""))
+
+        //data gotten from nhl.com for the 2019-2020 season
+        val bufferedSource = Source.fromFile("C:/Users/matth/revature/project0/src/main/csv/nhl.csv")
         for(line <- bufferedSource.getLines){
             //move lines into mongoDB
             //println(line)
@@ -26,8 +28,6 @@ object Main {
         //println(story)
         bufferedSource.close()
 
-        var textLine: Int = 0
-        var deadLine: Int = 999 //will set deadLine when story is finished
 
         // while(textLine != deadLine){
         //     //Print description 
@@ -67,8 +67,6 @@ object Main {
         //     var newLine: Int = printResults(textLine, answer.toInt)
         //     textLine = newLine
         // }
-
-        println("You are now dead")
 
     }
 
