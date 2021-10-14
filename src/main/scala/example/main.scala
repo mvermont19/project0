@@ -3,10 +3,8 @@ package example
 import scala.io._
 import scala.collection._
 import java.io._
-import _root_.scala.util.Success
-import _root_.scala.util.Failure
-import scala.util.Try
 
+import example.Helpers._
 import org.mongodb.scala._ 
 
 
@@ -16,6 +14,10 @@ import org.mongodb.scala._
   */
 object Main {
     def main(args: Array[String]){
+
+      val client: MongoClient = MongoClient()
+      val db: MongoDatabase = client.getDatabase("NHL")
+      val col: MongoCollection[Document] = db.getCollection("Players")
 
         //data gotten from nhl.com for the 2019-2020 season
         val bufferedSource = Source.fromFile("C:/Users/matth/revature/project0/src/main/csv/nhl.csv")

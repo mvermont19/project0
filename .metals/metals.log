@@ -30130,3 +30130,94 @@ Starting thread that pumps server stdout and redirects it to the client stdout..
 [0m2021.10.14 16:23:17 WARN  unsupported Scala 2.12.7[0m
 Oct 14, 2021 4:23:58 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+[0m2021.10.14 16:29:44 INFO  compiling root (1 scala source)[0m
+[0m2021.10.14 16:29:46 INFO  time: compiled root in 2.14s[0m
+[0m2021.10.14 16:30:48 INFO  compiling root (1 scala source)[0m
+[0m2021.10.14 16:30:48 INFO  time: compiled root in 0.49s[0m
+[0m2021.10.14 16:31:00 INFO  compiling root (1 scala source)[0m
+[0m2021.10.14 16:31:00 INFO  time: compiled root in 0.3s[0m
+[0m2021.10.14 16:31:11 INFO  compiling root (1 scala source)[0m
+[0m2021.10.14 16:31:11 INFO  time: compiled root in 0.85s[0m
+[0m2021.10.14 16:31:36 INFO  shutting down Metals[0m
+[0m2021.10.14 16:31:36 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.10.14 16:31:36 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+[0m2021.10.14 16:32:22 INFO  Started: Metals version 0.10.7 in workspace 'C:\Users\matth\revature\project0' for client Visual Studio Code 1.61.0.[0m
+[0m2021.10.14 16:32:23 INFO  time: initialize in 1s[0m
+[0m2021.10.14 16:32:24 INFO  Attempting to connect to the build server...[0m
+[0m2021.10.14 16:32:24 WARN  no build target for: C:\Users\matth\revature\project0\src\main\scala\example\main.scala[0m
+[0m2021.10.14 16:32:25 INFO  skipping build import with status 'Failed'[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 44577'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:44577...
+The server is listening for incoming connections at tcp://127.0.0.1:44577...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.10.14 16:32:27 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.10.14 16:32:27 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 34694'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:34694...
+The server is listening for incoming connections at tcp://127.0.0.1:34694...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.10.14 16:32:28 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.10.14 16:32:28 INFO  time: Connected to build server in 3.38s[0m
+[0m2021.10.14 16:32:28 INFO  Connected to Build server: Bloop v1.4.9[0m
+[0m2021.10.14 16:32:29 INFO  no build target: using presentation compiler with only scala-library: 2.12.15[0m
+[0m2021.10.14 16:32:30 INFO  time: Imported build in 0.88s[0m
+[0m2021.10.14 16:32:31 INFO  no build target: using presentation compiler with only scala-library: 2.12.15[0m
+[0m2021.10.14 16:32:33 INFO  time: code lens generation in 4.17s[0m
+[0m2021.10.14 16:32:35 INFO  time: indexed workspace in 4.75s[0m
+[0m2021.10.14 16:32:35 INFO  compiling root (1 scala source)[0m
+[0m2021.10.14 16:32:36 INFO  no build target: using presentation compiler with only scala-library: 2.12.8[0m
+[0m2021.10.14 16:32:36 INFO  time: compiled root in 1.56s[0m
+Oct 14, 2021 4:33:32 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 37
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in org.mongodb.scala.MongoCollection[<error>]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 503, 503, 528)
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in org.mongodb.scala.MongoCollection[<error>]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 503, 503, 522)
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in org.mongodb.scala.MongoCollection[<error>]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 503, 503, 523)
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in org.mongodb.scala.MongoCollection[org.mongodb.scala.Document]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 503, 503, 528)
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in org.mongodb.scala.MongoCollection[org.mongodb.scala.Document]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 503, 503, 528)
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in org.mongodb.scala.MongoCollection[org.mongodb.scala.Document]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 503, 503, 528)
+[0m2021.10.14 16:34:40 INFO  compiling root (1 scala source)[0m
+[0m2021.10.14 16:34:40 INFO  time: compiled root in 0.91s[0m
+[0m2021.10.14 16:36:09 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.14 16:36:09 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.14 16:36:33 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.14 16:36:36 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.14 16:36:41 INFO  running 'C:\Users\matth\.jabba\jdk\adopt@1.8.0-292\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\matth\AppData\Local\Temp\metals8239470523511877184\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.10.14 16:36:46 INFO  [info] Loading settings for project project0-build-build from metals.sbt ...[0m
+[0m2021.10.14 16:36:48 INFO  [info] Loading project definition from C:\Users\matth\revature\project0\project\project[0m
+[0m2021.10.14 16:36:52 INFO  [info] Loading settings for project project0-build from metals.sbt ...[0m
+[0m2021.10.14 16:36:52 INFO  [info] Loading project definition from C:\Users\matth\revature\project0\project[0m
+[0m2021.10.14 16:36:59 INFO  [success] Generated .bloop\project0-build.json[0m
+[0m2021.10.14 16:36:59 INFO  [success] Total time: 7 s, completed Oct 14, 2021 4:37:00 PM[0m
+[0m2021.10.14 16:37:02 INFO  [info] Loading settings for project root from build.sbt ...[0m
+[0m2021.10.14 16:37:02 INFO  [info] Set current project to project0 (in build file:/C:/Users/matth/revature/project0/)[0m
+[0m2021.10.14 16:37:02 INFO  [success] Generated .bloop\root-test.json[0m
+[0m2021.10.14 16:37:02 INFO  [success] Generated .bloop\root.json[0m
+[0m2021.10.14 16:37:02 INFO  [success] Total time: 0 s, completed Oct 14, 2021 4:37:02 PM[0m
+[0m2021.10.14 16:37:03 INFO  time: ran 'sbt bloopInstall' in 21s[0m
+[0m2021.10.14 16:37:03 INFO  Disconnecting from Bloop session...[0m
+[0m2021.10.14 16:37:03 INFO  Shut down connection with build server.[0m
+[0m2021.10.14 16:37:03 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+[0m2021.10.14 16:37:03 INFO  Attempting to connect to the build server...[0m
+[0m2021.10.14 16:37:04 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.10.14 16:37:04 INFO  Attempting to connect to the build server...[0m
+[0m2021.10.14 16:37:05 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.10.14 16:37:05 INFO  time: Connected to build server in 2.06s[0m
+[0m2021.10.14 16:37:05 INFO  Connected to Build server: Bloop v1.4.9[0m
+[0m2021.10.14 16:37:05 INFO  time: Imported build in 0.11s[0m
+[0m2021.10.14 16:37:05 INFO  time: indexed workspace in 0.75s[0m
+[0m2021.10.14 16:37:07 INFO  no build target: using presentation compiler with only scala-library: 2.12.8[0m
+[0m2021.10.14 16:37:07 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.14 16:37:07 WARN  unsupported Scala 2.12.7[0m
