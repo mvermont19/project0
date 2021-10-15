@@ -1,4 +1,4 @@
-[0m[[0m[33mwarn[0m] [0m[0mC:\Users\matth\revature\project0\src\main\scala\example\main.scala:7:16: imported `Helpers' is permanently hidden by definition of object Helpers in package example[0m
-[0m[[0m[33mwarn[0m] [0m[0mimport example.Helpers[0m
-[0m[[0m[33mwarn[0m] [0m[0m               ^[0m
-[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\matth\revature\project0\src\main\scala\example\main.scala:92:7: Missing closing brace `}' assumed here[0m
+[0m[[0m[31merror[0m] [0m[0m      var answer: Int = 9[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
