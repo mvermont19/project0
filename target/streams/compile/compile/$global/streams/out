@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\matth\revature\project0\src\main\scala\example\main.scala:92:7: Missing closing brace `}' assumed here[0m
-[0m[[0m[31merror[0m] [0m[0m      var answer: Int = 9[0m
-[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\matth\revature\project0\src\main\scala\example\main.scala:47:15: gp is already defined as variable gp[0m
+[0m[[0m[31merror[0m] [0m[0m          var gp = split(4).toInt[0m
+[0m[[0m[31merror[0m] [0m[0m              ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

@@ -33,32 +33,48 @@ object Main {
           //move lines into mongoDB
           var split: Array[String] = line.split(",")
 
+          //variables that need to be integers
+          var gp = split(4).toInt
+          var goals = split(5).toInt
+          var assists = split(6).toInt
+          var shots = split(17).toInt
+          var pen = split(8).toInt
+          var evg = split(9).toInt
+          var evp = split(10).toInt
+          var ppg = split(11).toInt
+          var ppp = split(12).toInt
+          var shg = split(13).toInt
+          var shp = split(14).toInt
+          var otg = split(15).toInt
+          var gwg = split(15).toInt
+
+
           var doc: Document = Document(
             "_id" -> id1,
             "name" -> split(0),
             "team" -> split(1),
             "hand" -> split(2),
             "position" -> split(3),
-            "games played" -> split(4).toInt,
-            "goals" -> split(5).toInt,
-            "assists"-> split(6).toInt,
-            "shots" -> split(17).toInt
+            "games played" -> gp,
+            "goals" -> goals,
+            "assists"-> assists,
+            "shots" -> shots
           )
           id1 += 1
           var doc2: Document = Document(
             "_id" -> id2,
             "playerID" -> id1,
             "plus/minus"-> split(7),
-            "penalty mins"-> split(8).toInt,
-            "even strength goals" -> split(9).toInt,
-            "even strength points" -> split(10).toInt,
-            "power play goals" -> split(11).toInt,
-            "power play points" -> split(12).toInt,
-            "short handed goals" -> split(13).toInt,
-            "short handed points" -> split(14).toInt,
-            "overtime goals" -> split(15).toInt,
-            "game winning goals" -> split(16).toInt,
-            "time on ice/game" -> split(18).toInt,
+            "penalty mins"-> pen,
+            "even strength goals" -> evg,
+            "even strength points" -> evp,
+            "power play goals" -> ppg,
+            "power play points" -> ppp,
+            "short handed goals" -> shg,
+            "short handed points" -> shp,
+            "overtime goals" -> otg,
+            "game winning goals" -> gwg,
+            "time on ice/game" -> split(18),
             "face-off win %" -> split(19)
           )
           id2 += 1
