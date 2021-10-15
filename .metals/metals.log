@@ -39077,3 +39077,107 @@ INFO: Unsupported notification method: $/setTrace
 [0m2021.10.15 12:54:16 INFO  time: compiled root in 0.75s[0m
 [0m2021.10.15 12:56:12 INFO  compiling root (1 scala source)[0m
 [0m2021.10.15 12:56:12 INFO  time: compiled root in 0.66s[0m
+[0m2021.10.15 14:04:25 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 14:04:25 INFO  time: compiled root in 0.25s[0m
+[0m2021.10.15 14:05:56 INFO  compiling root (3 scala sources)[0m
+[0m2021.10.15 14:05:58 INFO  time: compiled root in 1.55s[0m
+[0m2021.10.15 14:06:20 INFO  compiling root (3 scala sources)[0m
+[0m2021.10.15 14:06:22 WARN  there was one deprecation warning (since 2.4); re-run with -deprecation for details[0m
+[0m2021.10.15 14:06:22 INFO  time: compiled root in 2.63s[0m
+[0m2021.10.15 14:09:25 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 14:09:25 INFO  time: compiled root in 0.11s[0m
+[0m2021.10.15 14:09:48 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:114:11: stale bloop error: ')' expected but '}' found.
+          }
+          ^[0m
+[0m2021.10.15 14:09:48 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:114:11: stale bloop error: ')' expected but '}' found.
+          }
+          ^[0m
+[0m2021.10.15 14:10:01 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:114:11: stale bloop error: ')' expected but '}' found.
+          }
+          ^[0m
+[0m2021.10.15 14:10:01 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:114:11: stale bloop error: ')' expected but '}' found.
+          }
+          ^[0m
+[0m2021.10.15 14:10:20 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:114:11: stale bloop error: ')' expected but '}' found.
+          }
+          ^[0m
+[0m2021.10.15 14:10:20 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:114:11: stale bloop error: ')' expected but '}' found.
+          }
+          ^[0m
+[0m2021.10.15 14:10:34 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:114:11: stale bloop error: ')' expected but '}' found.
+          }
+          ^[0m
+[0m2021.10.15 14:10:34 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:114:11: stale bloop error: ')' expected but '}' found.
+          }
+          ^[0m
+[0m2021.10.15 14:11:29 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 14:11:30 INFO  time: compiled root in 1.12s[0m
+[0m2021.10.15 14:13:19 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 14:13:19 INFO  time: compiled root in 0.86s[0m
+[0m2021.10.15 14:13:53 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 14:13:53 INFO  time: compiled root in 0.87s[0m
+[0m2021.10.15 14:16:51 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 14:16:51 INFO  time: compiled root in 0.83s[0m
+Oct 15, 2021 2:18:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2628
+Oct 15, 2021 2:19:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2739
+[0m2021.10.15 14:21:33 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 14:21:33 INFO  time: compiled root in 0.82s[0m
+[0m2021.10.15 14:29:13 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 14:29:13 INFO  time: compiled root in 0.34s[0m
+Oct 15, 2021 2:29:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3041
+Oct 15, 2021 2:29:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3049
+[0m2021.10.15 14:30:59 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 14:30:59 INFO  time: compiled root in 0.81s[0m
+[0m2021.10.15 14:32:24 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 14:32:24 INFO  time: compiled root in 0.3s[0m
+[0m2021.10.15 14:33:27 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 14:33:27 INFO  time: compiled root in 0.66s[0m
+Oct 15, 2021 2:35:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3253
+Oct 15, 2021 2:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3284
+[0m2021.10.15 14:37:01 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 14:37:01 INFO  time: compiled root in 0.64s[0m
+Oct 15, 2021 2:37:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3377
+Oct 15, 2021 2:37:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3385
+[0m2021.10.15 14:37:48 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 14:37:48 INFO  time: compiled root in 0.32s[0m
+Oct 15, 2021 2:38:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3419
+Oct 15, 2021 2:38:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3430
+Oct 15, 2021 2:38:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3455
+Oct 15, 2021 2:38:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3469
+Oct 15, 2021 2:38:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3479
+Oct 15, 2021 2:38:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3494
+Oct 15, 2021 2:39:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3514
+Oct 15, 2021 2:39:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3527
+Oct 15, 2021 2:39:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3545
+[0m2021.10.15 14:39:27 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 14:39:27 INFO  time: compiled root in 0.5s[0m
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in org.mongodb.scala.Observable[org.mongodb.scala.Completed]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 2923, 2923, 2944)
+[0m2021.10.15 14:40:00 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 14:40:00 INFO  time: compiled root in 0.59s[0m
+[0m2021.10.15 14:41:46 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 14:41:46 INFO  time: compiled root in 0.61s[0m
+[0m2021.10.15 14:43:01 INFO  shutting down Metals[0m
+[0m2021.10.15 14:43:01 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+[0m2021.10.15 14:43:01 INFO  Shut down connection with build server.No more data in the server stdin, exiting...
+[0mNo more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+
+No more data in the client stdin, exiting...

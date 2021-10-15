@@ -3,11 +3,21 @@ package example
 import scala.io._
 import scala.collection._
 import java.io._
+import scala.concurrent._
 
 import example.Helpers._
 import org.mongodb.scala._ 
 import javax.print.Doc
+
 import org.mongodb.scala.model.Filters._
+import org.mongodb.scala.model.Sorts._
+import org.mongodb.scala.model.Projections._
+import org.mongodb.scala.model.Aggregates._
+import org.mongodb.scala.model.Updates._
+import com.mongodb.client.model.Aggregates
+import com.mongodb.client.model.Accumulators
+import com.mongodb.client.model.Projections
+
 
 /**
   * This main method in the beginning reads in a csv file and creates a mongodb database and collection
@@ -102,20 +112,57 @@ object Main {
         }
       }
       
-
       var answer: Int = 0
-      while(answer != 4){
-        println("Please choose an option to learn about the NHL: ")
-        println("1. Player Info \n2. Team Totals \n3. Changes \n4. Exit")
-        answer = getUserInput()
+      var exit: Boolean = false
+      while(!exit){
+        println("")
+        Thread.sleep(1000)
+
+        val intro: String = "Please choose an option to learn about the NHL: "
+        val startingScreen: String = "1. Player Info \n2. Team Totals \n3. Changes \n4. Exit"
+        val playerInfo: String = "What would you like to know about the Players: "
+        val playerChoices: String = "1. Total Points \n2. Shooting % \n3. Goals per Game \n4. Lefties vs Righties \n5. Position-wise"
+        val teamInfo : String = "What would you like to know about the Teams: "
+        val teamChoices: String = "1. Total Goals \n2. Shooting % \n3. Goals per Game \n4. Show Players per Team"
+        val changesInfo: String = "What changes would you like to make: "
+        val changesChoices: String = "1. Create a player \n2. Change a player's stats \n3. Delete a player "
+
+
+        answer = getUserInput(intro, startingScreen)
         answer match {
           case 1 => {
-            println("What would you like to know about the Players: ")
-            println("1. Total Points \n2. Shooting % \n3. Goals per Game \n4. Lefties vs Righties \n5. Position-wise")
-            answer = getUserInput()
+            answer = getUserInput(playerInfo, playerChoices)
             answer match {
               case 1 => {
                 //Points
+                // col.aggregate(
+                //   Seq(
+                //    // Aggregates.group(
+                //     //  "$goals", Accumulators.sum("add", 1)
+                //     //),
+
+                //     Aggregates.project(
+                //       Projections.fields(
+                //         Projections.excludeId(),
+                //         Projections.include("name"),
+                //         Projections.include("goals"),
+                //         Projections.include("assists"),
+                //         Projections.computed("points", Accumulators.sum("goals", "add")
+                //         )))
+                //     //     Projections.include(Accumulators.sum("sum", 1))
+                //         //: {Accumulators.sum("$goals", 1), Accumulators.sum("$assists", 1)}))
+                //       )
+                //    // )
+
+                //   //  group(Document("_id" -> "$name"), Accumulators.sum("goals", 1), Accumulators.sum("assists", 1)),
+                //   //   project(Document(
+                //   //     "name" -> "$name",
+                //   //     "goals" -> "$goals",
+                //   //     "assists" -> "$assists",
+                //   //     "points" -> "points"
+                //   //   ))
+                //   //)
+                // ).printResults()
               }
               case 2 => {
                 //Shooting %
@@ -125,19 +172,59 @@ object Main {
               }
               case 4 => {
                 //L v R
+                // col.aggregate(
+                //   Seq(
+                //     group(Document(
+                //       {"_id" : "$hand",
+                //       {"TotalGoals" : {"$sum" : "$goals"}}}
+                //       )
+                //     )
+                //     // project(
+                //     //   "_id" : 0,
+                //     //   "hand" : _id,
+                //     //   "Total Goals": 1
+                //     // )
+                //   )
+                // ).printResults()
               }
               case 5 => {
                 //Position
+                // col.aggregate(
+                //   Seq(
+                //     group(Document(
+                //       {"_id" : "$position",
+                //       {"TotalGoals" : {"$sum" : "$goals"}}}
+                //       )
+                //     )
+                //     // project(
+                //     //   "_id" : 0,
+                //     //   "hand" : _id,
+                //     //   "Total Goals": 1
+                //     // )
+                //   )
+                // ).printResults()
               }
             }
           }
           case 2 => {
-            println("What would you like to know about the Teams: ")
-            println("1. Total Goals \n2. Shooting % \n3. Goals per Game \n4. Show Players per Team")
-            answer = getUserInput()
+            answer = getUserInput(teamInfo, teamChoices)
             answer match {
               case 1 => {
                 //Goals
+                // col.aggregate(
+                //   Seq(
+                //     group(Document(
+                //       {"_id" : "$team",
+                //       {"TotalGoals" : {"$sum" : "$goals"}}}
+                //       )
+                //     )
+                //     // project(
+                //     //   "_id" : 0,
+                //     //   "hand" : _id,
+                //     //   "Total Goals": 1
+                //     // )
+                //   )
+                // ).printResults()
               }
               case 2 => {
                 //Shooting %
@@ -147,17 +234,56 @@ object Main {
               }
               case 4 =>{
                 //Player grouping
+                //Aggregates.sort(orderBy(descending("team"))).printResults
+                // col.aggregate(
+                //   Seq(
+                //     group(
+                //       sort(orderBy(descending("team")))
+                //     )
+                //   )
+                // ).printResults()
               }
               case _ => println("Not a valid answer. Try again")
             }
           }
           case 3 => {
-            println("What changes would you like to make: ")
-            println("1. Create a player \n2. Change a player's stats \n3. Delete a player ")
-            answer = getUserInput()
+            answer = getUserInput(changesInfo, changesChoices)
             answer match {
               case 1 => {
                 //Create a player
+                println("Please give the players name: ")
+                var name: String = StdIn.readLine()
+                println("Please give the players handedness (R or L): ")
+                var hand: String = StdIn.readLine()
+                println("Please give the players team: ")
+                var team: String = StdIn.readLine()
+                println("Please give the players position: ")
+                var pos: String = StdIn.readLine()
+                println("Please give the players games played: ")
+                var gp: Int = StdIn.readInt()
+                println("Please give the players goals: ")
+                var goals: Int = StdIn.readInt()
+                println("Please give the players assists: ")
+                var assists: Int = StdIn.readInt()
+                println("Please give the players shots: ")
+                var shots: Int = StdIn.readInt()
+
+                var doc: Document = new Document(
+                  "_id" -> id1,
+                  "name" -> name,
+                  "team" -> team,
+                  "hand" -> hand,
+                  "position" -> pos,
+                  "games played" -> gp,
+                  "goals" -> goals,
+                  "assists"-> assists,
+                  "shots" -> shots
+                )
+                id1 += 1
+
+                col.insertOne(doc)
+
+
               }
               case 2 => {
                 //Change a player
@@ -170,13 +296,14 @@ object Main {
           }
           case 4 => {
             println("Exiting the program. Goodbye!")
+            exit = true
           }
           case _ => println("Not a valid answer. Try again")
         }
 
       }
-      col.drop()
-      col2.drop()
+      col.deleteMany(gte("_id", 0)).printResults()
+      col2.deleteMany(gte("_id", 0)).printResults()
       client.close()
     }
 
@@ -186,12 +313,14 @@ object Main {
       *
       * @return
       */
-    def getUserInput(): Int = {
+    def getUserInput(strings: String*): Int = {
       var validAnswer: Boolean = false
       var userInput: String = ""
       var answer = 0
 
       while(!validAnswer){
+        println(strings(0))
+        println(strings(1))
         userInput = StdIn.readLine()
         if(userInput.isEmpty())  {
           println("Please give an answer")
