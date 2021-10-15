@@ -268,7 +268,7 @@ object Main {
                 println("Please give the players shots: ")
                 var shots: Int = StdIn.readInt()
 
-                var doc: Document = new Document(
+                var doc: Document = Document(
                   "_id" -> id1,
                   "name" -> name,
                   "team" -> team,
@@ -282,7 +282,7 @@ object Main {
                 id1 += 1
 
                 col.insertOne(doc)
-
+                col.find(equal("name", name)).first().printHeadResult()
 
               }
               case 2 => {

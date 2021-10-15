@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\matth\revature\project0\src\main\scala\example\main.scala:273:26: 8 more arguments than can be applied to constructor Document: (underlying: org.mongodb.scala.bson.BsonDocument)org.mongodb.scala.bson.collection.immutable.Document[0m
-[0m[[0m[31merror[0m] [0m[0m                  "name" -> name,[0m
-[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\matth\revature\project0\src\main\scala\example\main.scala:285:72: ';' expected but ')' found.[0m
+[0m[[0m[31merror[0m] [0m[0m                col.find(equal("name", name)).first().printHeadResult())[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                       ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

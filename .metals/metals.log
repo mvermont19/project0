@@ -39181,3 +39181,733 @@ No more data in the client stdin, exiting...
 No more data in the server stdin, exiting...
 
 No more data in the client stdin, exiting...
+[0m2021.10.15 14:44:15 INFO  Started: Metals version 0.10.7 in workspace 'C:\Users\matth\revature\project0' for client Visual Studio Code 1.61.1.[0m
+[0m2021.10.15 14:44:16 INFO  time: initialize in 0.48s[0m
+[0m2021.10.15 14:44:16 INFO  Attempting to connect to the build server...[0m
+[0m2021.10.15 14:44:16 WARN  no build target for: C:\Users\matth\revature\project0\src\main\scala\example\main.scala[0m
+[0m2021.10.15 14:44:17 INFO  skipping build import with status 'Installed'[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 45144'...
+Waiting for the bsp connection to come up...
+[0m2021.10.15 14:44:18 WARN  no build target for: C:\Users\matth\revature\project0\src\main\scala\example\main.scala[0m
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:45144...
+The server is listening for incoming connections at tcp://127.0.0.1:45144...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.10.15 14:44:18 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.10.15 14:44:18 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 39002'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:39002...
+The server is listening for incoming connections at tcp://127.0.0.1:39002...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.10.15 14:44:19 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.10.15 14:44:19 INFO  time: Connected to build server in 2.94s[0m
+[0m2021.10.15 14:44:19 INFO  Connected to Build server: Bloop v1.4.9[0m
+[0m2021.10.15 14:44:20 INFO  no build target: using presentation compiler with only scala-library: 2.12.15[0m
+[0m2021.10.15 14:44:20 INFO  time: Imported build in 0.32s[0m
+[0m2021.10.15 14:44:21 INFO  no build target: using presentation compiler with only scala-library: 2.12.15[0m
+[0m2021.10.15 14:44:24 INFO  time: code lens generation in 6.55s[0m
+[0m2021.10.15 14:44:24 INFO  time: code lens generation in 6.68s[0m
+[0m2021.10.15 14:44:26 INFO  time: indexed workspace in 5.5s[0m
+[0m2021.10.15 14:44:26 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 14:44:27 INFO  no build target: using presentation compiler with only scala-library: 2.12.8[0m
+[0m2021.10.15 14:44:26 INFO  time: compiled root in 0.94s[0m
+Oct 15, 2021 2:44:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 28
+Oct 15, 2021 2:44:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 29
+[0m2021.10.15 14:44:41 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 14:44:41 INFO  time: compiled root in 0.5s[0m
+[0m2021.10.15 14:45:04 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 14:45:04 INFO  time: compiled root in 0.55s[0m
+[0m2021.10.15 14:47:19 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 14:47:19 INFO  time: compiled root in 0.64s[0m
+[0m2021.10.15 14:48:55 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 14:48:55 INFO  time: compiled root in 0.29s[0m
+[0m2021.10.15 14:51:06 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 14:51:06 INFO  time: compiled root in 0.33s[0m
+[0m2021.10.15 14:51:57 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 14:51:57 INFO  time: compiled root in 0.45s[0m
+[0m2021.10.15 14:59:30 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 14:59:30 INFO  time: compiled root in 0.64s[0m
+[0m2021.10.15 15:00:33 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 15:00:33 INFO  time: compiled root in 0.41s[0m
+[0m2021.10.15 15:01:35 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 15:01:35 INFO  time: compiled root in 0.32s[0m
+[0m2021.10.15 15:02:38 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 15:02:38 INFO  time: compiled root in 0.3s[0m
+Oct 15, 2021 3:09:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1483
+Oct 15, 2021 3:13:48 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1624
+Oct 15, 2021 3:14:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1643
+Oct 15, 2021 3:14:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1649
+Oct 15, 2021 3:14:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1659
+Oct 15, 2021 3:15:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1689
+Oct 15, 2021 3:15:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1695
+Oct 15, 2021 3:15:13 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1727
+Oct 15, 2021 3:15:32 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1733
+Oct 15, 2021 3:15:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1738
+Oct 15, 2021 3:15:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1744
+Oct 15, 2021 3:15:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1771
+Oct 15, 2021 3:15:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1777
+Oct 15, 2021 3:16:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1815
+Oct 15, 2021 3:16:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1821
+Oct 15, 2021 3:16:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1845
+Oct 15, 2021 3:17:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1851
+Oct 15, 2021 3:18:14 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2065
+Oct 15, 2021 3:18:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2079
+Oct 15, 2021 3:18:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2085
+Oct 15, 2021 3:18:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2101
+Oct 15, 2021 3:18:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2107
+Oct 15, 2021 3:18:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2113
+Oct 15, 2021 3:18:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2119
+[0m2021.10.15 15:20:42 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 15:20:42 INFO  time: compiled root in 38ms[0m
+[0m2021.10.15 15:20:59 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 15:20:59 INFO  time: compiled root in 34ms[0m
+Oct 15, 2021 3:21:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2305
+Oct 15, 2021 3:22:13 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2324
+[0m2021.10.15 15:22:21 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 15:22:21 INFO  time: compiled root in 32ms[0m
+[0m2021.10.15 15:22:43 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 15:22:43 INFO  time: compiled root in 29ms[0m
+[0m2021.10.15 15:23:42 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:140:45: stale bloop error: illegal start of declaration
+                      "points" -> ("$sum": {"$goals","$assists"}"")
+                                            ^[0m
+[0m2021.10.15 15:23:42 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:140:65: stale bloop error: ')' expected but string literal found.
+                      "points" -> ("$sum": {"$goals","$assists"}"")
+                                                                ^[0m
+[0m2021.10.15 15:23:42 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:144:15: stale bloop error: ')' expected but '}' found.
+              }
+              ^[0m
+[0m2021.10.15 15:23:42 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:140:45: stale bloop error: illegal start of declaration
+                      "points" -> ("$sum": {"$goals","$assists"}"")
+                                            ^[0m
+[0m2021.10.15 15:23:42 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:140:65: stale bloop error: ')' expected but string literal found.
+                      "points" -> ("$sum": {"$goals","$assists"}"")
+                                                                ^[0m
+[0m2021.10.15 15:23:42 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:144:15: stale bloop error: ')' expected but '}' found.
+              }
+              ^[0m
+[0m2021.10.15 15:24:27 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 15:24:27 INFO  time: compiled root in 0.29s[0m
+[0m2021.10.15 15:24:57 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 15:24:57 INFO  time: compiled root in 0.44s[0m
+Oct 15, 2021 3:25:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2584
+[0m2021.10.15 15:25:18 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 15:25:18 INFO  time: compiled root in 0.32s[0m
+[0m2021.10.15 15:26:00 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 15:26:00 INFO  time: compiled root in 0.36s[0m
+Oct 15, 2021 3:29:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2643
+Oct 15, 2021 3:29:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2652
+[0m2021.10.15 15:37:51 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 15:37:51 INFO  time: compiled root in 34ms[0m
+[0m2021.10.15 15:37:59 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:137:29: stale bloop error: identifier expected but string literal found.
+                      _id : "$name",
+                            ^[0m
+[0m2021.10.15 15:37:59 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:150:15: stale bloop error: ')' expected but '}' found.
+              }
+              ^[0m
+[0m2021.10.15 15:37:59 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:137:29: stale bloop error: identifier expected but string literal found.
+                      _id : "$name",
+                            ^[0m
+[0m2021.10.15 15:37:59 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:150:15: stale bloop error: ')' expected but '}' found.
+              }
+              ^[0m
+[0m2021.10.15 15:37:59 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:137:29: stale bloop error: identifier expected but string literal found.
+                      _id : "$name",
+                            ^[0m
+[0m2021.10.15 15:37:59 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:150:15: stale bloop error: ')' expected but '}' found.
+              }
+              ^[0m
+[0m2021.10.15 15:38:00 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:137:29: stale bloop error: identifier expected but string literal found.
+                      _id : "$name",
+                            ^[0m
+[0m2021.10.15 15:38:00 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:150:15: stale bloop error: ')' expected but '}' found.
+              }
+              ^[0m
+[0m2021.10.15 15:38:01 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:137:29: stale bloop error: identifier expected but string literal found.
+                      _id : "$name",
+                            ^[0m
+[0m2021.10.15 15:38:01 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:150:15: stale bloop error: ')' expected but '}' found.
+              }
+              ^[0m
+[0m2021.10.15 15:38:01 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:137:29: stale bloop error: identifier expected but string literal found.
+                      _id : "$name",
+                            ^[0m
+[0m2021.10.15 15:38:01 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:150:15: stale bloop error: ')' expected but '}' found.
+              }
+              ^[0m
+[0m2021.10.15 15:38:03 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:137:29: stale bloop error: identifier expected but string literal found.
+                      _id : "$name",
+                            ^[0m
+[0m2021.10.15 15:38:03 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:150:15: stale bloop error: ')' expected but '}' found.
+              }
+              ^[0m
+[0m2021.10.15 15:38:03 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:137:29: stale bloop error: identifier expected but string literal found.
+                      _id : "$name",
+                            ^[0m
+[0m2021.10.15 15:38:03 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:150:15: stale bloop error: ')' expected but '}' found.
+              }
+              ^[0m
+[0m2021.10.15 15:38:06 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 15:38:06 INFO  time: compiled root in 25ms[0m
+[0m2021.10.15 15:38:18 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:137:29: stale bloop error: identifier expected but string literal found.
+                      _id : "$name",
+                            ^[0m
+[0m2021.10.15 15:38:18 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:150:15: stale bloop error: ')' expected but '}' found.
+              }
+              ^[0m
+[0m2021.10.15 15:38:18 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:137:29: stale bloop error: identifier expected but string literal found.
+                      _id : "$name",
+                            ^[0m
+[0m2021.10.15 15:38:18 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:150:15: stale bloop error: ')' expected but '}' found.
+              }
+              ^[0m
+[0m2021.10.15 15:38:21 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 15:38:21 INFO  time: compiled root in 24ms[0m
+[0m2021.10.15 15:39:37 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:137:31: stale bloop error: identifier expected but string literal found.
+                      "_id" : "$name",
+                              ^[0m
+[0m2021.10.15 15:39:37 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:150:15: stale bloop error: ')' expected but '}' found.
+              }
+              ^[0m
+[0m2021.10.15 15:39:37 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:137:31: stale bloop error: identifier expected but string literal found.
+                      "_id" : "$name",
+                              ^[0m
+[0m2021.10.15 15:39:37 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:150:15: stale bloop error: ')' expected but '}' found.
+              }
+              ^[0m
+[0m2021.10.15 15:39:43 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:137:31: stale bloop error: identifier expected but string literal found.
+                      "_id" : "$name",
+                              ^[0m
+[0m2021.10.15 15:39:43 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:150:15: stale bloop error: ')' expected but '}' found.
+              }
+              ^[0m
+[0m2021.10.15 15:39:43 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:137:31: stale bloop error: identifier expected but string literal found.
+                      "_id" : "$name",
+                              ^[0m
+[0m2021.10.15 15:39:43 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:150:15: stale bloop error: ')' expected but '}' found.
+              }
+              ^[0m
+[0m2021.10.15 15:39:53 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 15:39:53 INFO  time: compiled root in 34ms[0m
+[0m2021.10.15 15:39:59 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:138:37: stale bloop error: illegal start of declaration
+                      "sumGoals" : {"$sum": "$goals"},
+                                    ^[0m
+[0m2021.10.15 15:39:59 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:139:39: stale bloop error: illegal start of declaration
+                      "sumAssists" : {"$sum": "$assists"},
+                                      ^[0m
+[0m2021.10.15 15:39:59 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:140:34: stale bloop error: illegal start of declaration
+                      "points": {"$sum": "sumGoals", "$sum": "sumAssists"}
+                                 ^[0m
+[0m2021.10.15 15:39:59 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:138:37: stale bloop error: illegal start of declaration
+                      "sumGoals" : {"$sum": "$goals"},
+                                    ^[0m
+[0m2021.10.15 15:39:59 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:139:39: stale bloop error: illegal start of declaration
+                      "sumAssists" : {"$sum": "$assists"},
+                                      ^[0m
+[0m2021.10.15 15:39:59 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:140:34: stale bloop error: illegal start of declaration
+                      "points": {"$sum": "sumGoals", "$sum": "sumAssists"}
+                                 ^[0m
+[0m2021.10.15 15:40:03 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 15:40:03 INFO  time: compiled root in 22ms[0m
+Oct 15, 2021 3:40:16 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3342
+Oct 15, 2021 3:41:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3352
+[0m2021.10.15 15:42:29 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:137:29: stale bloop error: identifier expected but string literal found.
+                      _id : "$name",
+                            ^[0m
+[0m2021.10.15 15:42:29 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:150:15: stale bloop error: ')' expected but '}' found.
+              }
+              ^[0m
+[0m2021.10.15 15:42:29 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:137:29: stale bloop error: identifier expected but string literal found.
+                      _id : "$name",
+                            ^[0m
+[0m2021.10.15 15:42:29 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:150:15: stale bloop error: ')' expected but '}' found.
+              }
+              ^[0m
+[0m2021.10.15 15:42:33 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 15:42:33 INFO  time: compiled root in 35ms[0m
+[0m2021.10.15 15:44:24 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 15:44:24 INFO  time: compiled root in 26ms[0m
+[0m2021.10.15 15:45:10 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 15:45:10 INFO  time: compiled root in 59ms[0m
+[0m2021.10.15 15:45:29 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 15:45:29 INFO  time: compiled root in 39ms[0m
+[0m2021.10.15 15:58:33 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 15:58:33 INFO  time: compiled root in 0.3s[0m
+[0m2021.10.15 15:58:37 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 15:58:37 INFO  time: compiled root in 0.21s[0m
+[0m2021.10.15 15:58:48 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 15:58:48 INFO  time: compiled root in 0.46s[0m
+[0m2021.10.15 15:59:14 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 15:59:14 INFO  time: compiled root in 0.32s[0m
+[0m2021.10.15 15:59:20 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 15:59:20 INFO  time: compiled root in 0.27s[0m
+[0m2021.10.15 16:14:47 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 16:14:47 INFO  time: compiled root in 0.16s[0m
+[0m2021.10.15 16:15:03 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 16:15:03 INFO  time: compiled root in 0.1s[0m
+[0m2021.10.15 16:15:57 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:145:103: stale bloop error: type mismatch;
+ found   : com.mongodb.client.model.BsonField
+ required: String
+                        Projections.include(Accumulators.sum("points",(Accumulators.sum("goals", 1) + Accumulators.sum("assists", 1))))
+                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.15 16:15:57 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:145:103: stale bloop error: type mismatch;
+ found   : com.mongodb.client.model.BsonField
+ required: String
+                        Projections.include(Accumulators.sum("points",(Accumulators.sum("goals", 1) + Accumulators.sum("assists", 1))))
+                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.15 16:15:59 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:145:103: stale bloop error: type mismatch;
+ found   : com.mongodb.client.model.BsonField
+ required: String
+                        Projections.include(Accumulators.sum("points",(Accumulators.sum("goals", 1) + Accumulators.sum("assists", 1))))
+                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.15 16:15:59 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:145:103: stale bloop error: type mismatch;
+ found   : com.mongodb.client.model.BsonField
+ required: String
+                        Projections.include(Accumulators.sum("points",(Accumulators.sum("goals", 1) + Accumulators.sum("assists", 1))))
+                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.15 16:15:59 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:145:103: stale bloop error: type mismatch;
+ found   : com.mongodb.client.model.BsonField
+ required: String
+                        Projections.include(Accumulators.sum("points",(Accumulators.sum("goals", 1) + Accumulators.sum("assists", 1))))
+                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.15 16:16:00 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:145:103: stale bloop error: type mismatch;
+ found   : com.mongodb.client.model.BsonField
+ required: String
+                        Projections.include(Accumulators.sum("points",(Accumulators.sum("goals", 1) + Accumulators.sum("assists", 1))))
+                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.15 16:16:01 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:145:103: stale bloop error: type mismatch;
+ found   : com.mongodb.client.model.BsonField
+ required: String
+                        Projections.include(Accumulators.sum("points",(Accumulators.sum("goals", 1) + Accumulators.sum("assists", 1))))
+                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.15 16:16:00 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:145:103: stale bloop error: type mismatch;
+ found   : com.mongodb.client.model.BsonField
+ required: String
+                        Projections.include(Accumulators.sum("points",(Accumulators.sum("goals", 1) + Accumulators.sum("assists", 1))))
+                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.15 16:16:01 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:145:103: stale bloop error: type mismatch;
+ found   : com.mongodb.client.model.BsonField
+ required: String
+                        Projections.include(Accumulators.sum("points",(Accumulators.sum("goals", 1) + Accumulators.sum("assists", 1))))
+                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.15 16:16:01 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:145:103: stale bloop error: type mismatch;
+ found   : com.mongodb.client.model.BsonField
+ required: String
+                        Projections.include(Accumulators.sum("points",(Accumulators.sum("goals", 1) + Accumulators.sum("assists", 1))))
+                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.15 16:16:02 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:145:103: stale bloop error: type mismatch;
+ found   : com.mongodb.client.model.BsonField
+ required: String
+                        Projections.include(Accumulators.sum("points",(Accumulators.sum("goals", 1) + Accumulators.sum("assists", 1))))
+                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.15 16:16:02 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:145:103: stale bloop error: type mismatch;
+ found   : com.mongodb.client.model.BsonField
+ required: String
+                        Projections.include(Accumulators.sum("points",(Accumulators.sum("goals", 1) + Accumulators.sum("assists", 1))))
+                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.15 16:16:02 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:145:103: stale bloop error: type mismatch;
+ found   : com.mongodb.client.model.BsonField
+ required: String
+                        Projections.include(Accumulators.sum("points",(Accumulators.sum("goals", 1) + Accumulators.sum("assists", 1))))
+                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.15 16:16:02 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:145:103: stale bloop error: type mismatch;
+ found   : com.mongodb.client.model.BsonField
+ required: String
+                        Projections.include(Accumulators.sum("points",(Accumulators.sum("goals", 1) + Accumulators.sum("assists", 1))))
+                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.15 16:16:03 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:145:103: stale bloop error: type mismatch;
+ found   : com.mongodb.client.model.BsonField
+ required: String
+                        Projections.include(Accumulators.sum("points",(Accumulators.sum("goals", 1) + Accumulators.sum("assists", 1))))
+                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.15 16:16:03 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:145:103: stale bloop error: type mismatch;
+ found   : com.mongodb.client.model.BsonField
+ required: String
+                        Projections.include(Accumulators.sum("points",(Accumulators.sum("goals", 1) + Accumulators.sum("assists", 1))))
+                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.15 16:16:06 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:145:103: stale bloop error: type mismatch;
+ found   : com.mongodb.client.model.BsonField
+ required: String
+                        Projections.include(Accumulators.sum("points",(Accumulators.sum("goals", 1) + Accumulators.sum("assists", 1))))
+                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.15 16:16:06 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:145:103: stale bloop error: type mismatch;
+ found   : com.mongodb.client.model.BsonField
+ required: String
+                        Projections.include(Accumulators.sum("points",(Accumulators.sum("goals", 1) + Accumulators.sum("assists", 1))))
+                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.15 16:16:10 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:145:103: stale bloop error: type mismatch;
+ found   : com.mongodb.client.model.BsonField
+ required: String
+                        Projections.include(Accumulators.sum("points",(Accumulators.sum("goals", 1) + Accumulators.sum("assists", 1))))
+                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.15 16:16:10 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:145:103: stale bloop error: type mismatch;
+ found   : com.mongodb.client.model.BsonField
+ required: String
+                        Projections.include(Accumulators.sum("points",(Accumulators.sum("goals", 1) + Accumulators.sum("assists", 1))))
+                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.15 16:16:15 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:145:103: stale bloop error: type mismatch;
+ found   : com.mongodb.client.model.BsonField
+ required: String
+                        Projections.include(Accumulators.sum("points",(Accumulators.sum("goals", 1) + Accumulators.sum("assists", 1))))
+                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.15 16:16:15 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:145:103: stale bloop error: type mismatch;
+ found   : com.mongodb.client.model.BsonField
+ required: String
+                        Projections.include(Accumulators.sum("points",(Accumulators.sum("goals", 1) + Accumulators.sum("assists", 1))))
+                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.15 16:16:15 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:145:103: stale bloop error: type mismatch;
+ found   : com.mongodb.client.model.BsonField
+ required: String
+                        Projections.include(Accumulators.sum("points",(Accumulators.sum("goals", 1) + Accumulators.sum("assists", 1))))
+                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.15 16:16:16 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:145:103: stale bloop error: type mismatch;
+ found   : com.mongodb.client.model.BsonField
+ required: String
+                        Projections.include(Accumulators.sum("points",(Accumulators.sum("goals", 1) + Accumulators.sum("assists", 1))))
+                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.15 16:16:16 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:145:103: stale bloop error: type mismatch;
+ found   : com.mongodb.client.model.BsonField
+ required: String
+                        Projections.include(Accumulators.sum("points",(Accumulators.sum("goals", 1) + Accumulators.sum("assists", 1))))
+                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.15 16:16:16 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:145:103: stale bloop error: type mismatch;
+ found   : com.mongodb.client.model.BsonField
+ required: String
+                        Projections.include(Accumulators.sum("points",(Accumulators.sum("goals", 1) + Accumulators.sum("assists", 1))))
+                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.15 16:16:31 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:145:103: stale bloop error: type mismatch;
+ found   : com.mongodb.client.model.BsonField
+ required: String
+                        Projections.include(Accumulators.sum("points",(Accumulators.sum("goals", 1) + Accumulators.sum("assists", 1))))
+                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.15 16:16:31 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:145:103: stale bloop error: type mismatch;
+ found   : com.mongodb.client.model.BsonField
+ required: String
+                        Projections.include(Accumulators.sum("points",(Accumulators.sum("goals", 1) + Accumulators.sum("assists", 1))))
+                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.15 16:16:35 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:145:103: stale bloop error: type mismatch;
+ found   : com.mongodb.client.model.BsonField
+ required: String
+                        Projections.include(Accumulators.sum("points",(Accumulators.sum("goals", 1) + Accumulators.sum("assists", 1))))
+                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.15 16:16:35 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:145:103: stale bloop error: type mismatch;
+ found   : com.mongodb.client.model.BsonField
+ required: String
+                        Projections.include(Accumulators.sum("points",(Accumulators.sum("goals", 1) + Accumulators.sum("assists", 1))))
+                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.15 16:16:37 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:145:103: stale bloop error: type mismatch;
+ found   : com.mongodb.client.model.BsonField
+ required: String
+                        Projections.include(Accumulators.sum("points",(Accumulators.sum("goals", 1) + Accumulators.sum("assists", 1))))
+                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.15 16:16:37 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:145:103: stale bloop error: type mismatch;
+ found   : com.mongodb.client.model.BsonField
+ required: String
+                        Projections.include(Accumulators.sum("points",(Accumulators.sum("goals", 1) + Accumulators.sum("assists", 1))))
+                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.15 16:16:38 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:145:103: stale bloop error: type mismatch;
+ found   : com.mongodb.client.model.BsonField
+ required: String
+                        Projections.include(Accumulators.sum("points",(Accumulators.sum("goals", 1) + Accumulators.sum("assists", 1))))
+                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.15 16:16:38 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:145:103: stale bloop error: type mismatch;
+ found   : com.mongodb.client.model.BsonField
+ required: String
+                        Projections.include(Accumulators.sum("points",(Accumulators.sum("goals", 1) + Accumulators.sum("assists", 1))))
+                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.15 16:16:48 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 16:16:48 INFO  time: compiled root in 24ms[0m
+[0m2021.10.15 16:16:58 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:145:99: stale bloop error: ')' expected but string literal found.
+                        Projections.include(Accumulators.sum("points","$sum : {(Accumulators.sum("$goals", 1).Accumulators.sum("$assists", 1)}")))
+                                                                                                  ^[0m
+[0m2021.10.15 16:16:58 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:157:15: stale bloop error: ')' expected but '}' found.
+              }
+              ^[0m
+[0m2021.10.15 16:16:58 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:145:99: stale bloop error: ')' expected but string literal found.
+                        Projections.include(Accumulators.sum("points","$sum : {(Accumulators.sum("$goals", 1).Accumulators.sum("$assists", 1)}")))
+                                                                                                  ^[0m
+[0m2021.10.15 16:16:58 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:157:15: stale bloop error: ')' expected but '}' found.
+              }
+              ^[0m
+[0m2021.10.15 16:17:03 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 16:17:03 INFO  time: compiled root in 29ms[0m
+[0m2021.10.15 16:17:30 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 16:17:30 INFO  time: compiled root in 22ms[0m
+[0m2021.10.15 16:20:51 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:145:81: stale bloop error: illegal start of declaration
+                        Projections.include(Accumulators.sum("points","$sum" : {Accumulators.sum("$goals", 1), Accumulators.sum("$assists", 1)}))
+                                                                                ^[0m
+[0m2021.10.15 16:20:51 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:145:81: stale bloop error: illegal start of declaration
+                        Projections.include(Accumulators.sum("points","$sum" : {Accumulators.sum("$goals", 1), Accumulators.sum("$assists", 1)}))
+                                                                                ^[0m
+[0m2021.10.15 16:21:25 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 16:21:25 INFO  time: compiled root in 25ms[0m
+[0m2021.10.15 16:21:50 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 16:21:50 INFO  time: compiled root in 0.11s[0m
+[0m2021.10.15 16:21:55 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 16:21:55 INFO  time: compiled root in 19ms[0m
+[0m2021.10.15 16:22:04 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 16:22:04 INFO  time: compiled root in 0.13s[0m
+[0m2021.10.15 16:25:28 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 16:25:28 INFO  time: compiled root in 28ms[0m
+[0m2021.10.15 16:25:40 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 16:25:40 INFO  time: compiled root in 25ms[0m
+[0m2021.10.15 16:26:04 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 16:26:04 INFO  time: compiled root in 0.24s[0m
+[0m2021.10.15 16:28:24 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 16:28:24 INFO  time: compiled root in 0.24s[0m
+[0m2021.10.15 16:33:02 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 16:33:02 INFO  time: compiled root in 0.26s[0m
+[0m2021.10.15 16:39:16 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 16:39:16 INFO  time: compiled root in 34ms[0m
+[0m2021.10.15 16:39:25 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:150:42: stale bloop error: ')' expected but string literal found.
+                          "points" -> "{"$sum": "$goals", "$sum": "$assists"}"
+                                         ^[0m
+[0m2021.10.15 16:39:25 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:166:15: stale bloop error: ')' expected but '}' found.
+              }
+              ^[0m
+[0m2021.10.15 16:39:25 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:150:42: stale bloop error: ')' expected but string literal found.
+                          "points" -> "{"$sum": "$goals", "$sum": "$assists"}"
+                                         ^[0m
+[0m2021.10.15 16:39:25 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:166:15: stale bloop error: ')' expected but '}' found.
+              }
+              ^[0m
+[0m2021.10.15 16:39:29 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 16:39:29 INFO  time: compiled root in 29ms[0m
+[0m2021.10.15 16:39:35 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 16:39:35 INFO  time: compiled root in 27ms[0m
+[0m2021.10.15 16:47:14 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 16:47:14 INFO  time: compiled root in 32ms[0m
+[0m2021.10.15 16:47:30 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 16:47:30 INFO  time: compiled root in 0.24s[0m
+[0m2021.10.15 16:48:25 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 16:48:25 INFO  time: compiled root in 0.3s[0m
+[0m2021.10.15 16:50:07 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 16:50:07 INFO  time: compiled root in 0.28s[0m
+[0m2021.10.15 16:53:41 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 16:53:41 INFO  time: compiled root in 27ms[0m
+[0m2021.10.15 16:54:00 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 16:54:00 INFO  time: compiled root in 33ms[0m
+[0m2021.10.15 16:55:13 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:177:40: stale bloop error: ';' expected but ',' found.
+                      {"_id" -> "$hand",
+                                       ^[0m
+[0m2021.10.15 16:55:13 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:177:40: stale bloop error: ';' expected but ',' found.
+                      {"_id" -> "$hand",
+                                       ^[0m
+[0m2021.10.15 16:55:16 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:177:40: stale bloop error: ';' expected but ',' found.
+                      {"_id" -> "$hand",
+                                       ^[0m
+[0m2021.10.15 16:55:16 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:177:40: stale bloop error: ';' expected but ',' found.
+                      {"_id" -> "$hand",
+                                       ^[0m
+[0m2021.10.15 16:55:16 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:177:40: stale bloop error: ';' expected but ',' found.
+                      {"_id" -> "$hand",
+                                       ^[0m
+[0m2021.10.15 16:55:16 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:177:40: stale bloop error: ';' expected but ',' found.
+                      {"_id" -> "$hand",
+                                       ^[0m
+[0m2021.10.15 16:55:17 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:177:40: stale bloop error: ';' expected but ',' found.
+                      {"_id" -> "$hand",
+                                       ^[0m
+[0m2021.10.15 16:55:17 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:177:40: stale bloop error: ';' expected but ',' found.
+                      {"_id" -> "$hand",
+                                       ^[0m
+[0m2021.10.15 16:56:32 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 16:56:32 INFO  time: compiled root in 30ms[0m
+[0m2021.10.15 16:56:37 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 16:56:37 INFO  time: compiled root in 25ms[0m
+[0m2021.10.15 16:57:01 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 16:57:01 INFO  time: compiled root in 29ms[0m
+[0m2021.10.15 17:01:47 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 17:01:47 INFO  time: compiled root in 32ms[0m
+[0m2021.10.15 17:01:56 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 17:01:56 INFO  time: compiled root in 23ms[0m
+[0m2021.10.15 17:02:06 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 17:02:06 INFO  time: compiled root in 0.16s[0m
+[0m2021.10.15 17:02:43 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 17:02:43 INFO  time: compiled root in 0.13s[0m
+Oct 15, 2021 5:02:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6827
+Oct 15, 2021 5:03:32 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6836
+[0m2021.10.15 17:04:24 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 17:04:24 INFO  time: compiled root in 0.2s[0m
+[0m2021.10.15 17:04:52 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 17:04:52 INFO  time: compiled root in 0.14s[0m
+[0m2021.10.15 17:05:28 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 17:05:28 INFO  time: compiled root in 19ms[0m
+[0m2021.10.15 17:05:37 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 17:05:37 INFO  time: compiled root in 0.18s[0m
+[0m2021.10.15 17:05:43 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 17:05:43 INFO  time: compiled root in 23ms[0m
+[0m2021.10.15 17:06:05 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 17:06:05 INFO  time: compiled root in 25ms[0m
+[0m2021.10.15 17:06:13 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 17:06:13 INFO  time: compiled root in 33ms[0m
+[0m2021.10.15 17:07:30 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 17:07:30 INFO  time: compiled root in 34ms[0m
+[0m2021.10.15 17:08:38 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 17:08:38 INFO  time: compiled root in 29ms[0m
+[0m2021.10.15 17:11:10 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 17:11:10 INFO  time: compiled root in 31ms[0m
+[0m2021.10.15 17:13:51 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 17:13:51 INFO  time: compiled root in 26ms[0m
+[0m2021.10.15 17:14:47 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:177:32: stale bloop error: identifier expected but string literal found.
+                      {"_id" : "$hand",
+                               ^[0m
+[0m2021.10.15 17:14:47 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:194:32: stale bloop error: identifier expected but string literal found.
+                      {"_id" : "$position",
+                               ^[0m
+[0m2021.10.15 17:14:47 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:216:32: stale bloop error: identifier expected but string literal found.
+                      {"_id" : "$team",
+                               ^[0m
+[0m2021.10.15 17:14:47 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:241:15: stale bloop error: ')' expected but '}' found.
+              }
+              ^[0m
+[0m2021.10.15 17:14:47 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:177:32: stale bloop error: identifier expected but string literal found.
+                      {"_id" : "$hand",
+                               ^[0m
+[0m2021.10.15 17:14:47 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:194:32: stale bloop error: identifier expected but string literal found.
+                      {"_id" : "$position",
+                               ^[0m
+[0m2021.10.15 17:14:47 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:216:32: stale bloop error: identifier expected but string literal found.
+                      {"_id" : "$team",
+                               ^[0m
+[0m2021.10.15 17:14:47 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:241:15: stale bloop error: ')' expected but '}' found.
+              }
+              ^[0m
+[0m2021.10.15 17:14:47 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:177:32: stale bloop error: identifier expected but string literal found.
+                      {"_id" : "$hand",
+                               ^[0m
+[0m2021.10.15 17:14:47 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:194:32: stale bloop error: identifier expected but string literal found.
+                      {"_id" : "$position",
+                               ^[0m
+[0m2021.10.15 17:14:47 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:216:32: stale bloop error: identifier expected but string literal found.
+                      {"_id" : "$team",
+                               ^[0m
+[0m2021.10.15 17:14:47 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:241:15: stale bloop error: ')' expected but '}' found.
+              }
+              ^[0m
+[0m2021.10.15 17:14:47 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:177:32: stale bloop error: identifier expected but string literal found.
+                      {"_id" : "$hand",
+                               ^[0m
+[0m2021.10.15 17:14:47 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:194:32: stale bloop error: identifier expected but string literal found.
+                      {"_id" : "$position",
+                               ^[0m
+[0m2021.10.15 17:14:47 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:216:32: stale bloop error: identifier expected but string literal found.
+                      {"_id" : "$team",
+                               ^[0m
+[0m2021.10.15 17:14:47 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:241:15: stale bloop error: ')' expected but '}' found.
+              }
+              ^[0m
+[0m2021.10.15 17:14:49 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:177:32: stale bloop error: identifier expected but string literal found.
+                      {"_id" : "$hand",
+                               ^[0m
+[0m2021.10.15 17:14:49 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:194:32: stale bloop error: identifier expected but string literal found.
+                      {"_id" : "$position",
+                               ^[0m
+[0m2021.10.15 17:14:49 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:216:32: stale bloop error: identifier expected but string literal found.
+                      {"_id" : "$team",
+                               ^[0m
+[0m2021.10.15 17:14:49 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:241:15: stale bloop error: ')' expected but '}' found.
+              }
+              ^[0m
+[0m2021.10.15 17:14:49 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:177:32: stale bloop error: identifier expected but string literal found.
+                      {"_id" : "$hand",
+                               ^[0m
+[0m2021.10.15 17:14:49 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:194:32: stale bloop error: identifier expected but string literal found.
+                      {"_id" : "$position",
+                               ^[0m
+[0m2021.10.15 17:14:49 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:216:32: stale bloop error: identifier expected but string literal found.
+                      {"_id" : "$team",
+                               ^[0m
+[0m2021.10.15 17:14:49 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:241:15: stale bloop error: ')' expected but '}' found.
+              }
+              ^[0m
+[0m2021.10.15 17:14:52 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 17:14:52 INFO  time: compiled root in 27ms[0m
+[0m2021.10.15 17:15:24 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 17:15:24 INFO  time: compiled root in 36ms[0m
+[0m2021.10.15 17:15:55 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 17:15:55 INFO  time: compiled root in 31ms[0m
+[0m2021.10.15 17:16:40 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 17:16:40 INFO  time: compiled root in 0.33s[0m
+[0m2021.10.15 17:18:16 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 17:18:16 INFO  time: compiled root in 0.11s[0m
+[0m2021.10.15 17:18:32 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 17:18:32 INFO  time: compiled root in 0.24s[0m
+[0m2021.10.15 17:20:33 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 17:20:33 INFO  time: compiled root in 0.23s[0m
+[0m2021.10.15 17:20:44 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 17:20:44 INFO  time: compiled root in 0.25s[0m
+[0m2021.10.15 17:21:50 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 17:21:50 INFO  time: compiled root in 0.23s[0m
+[0m2021.10.15 17:22:08 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 17:22:08 INFO  time: compiled root in 0.21s[0m
+[0m2021.10.15 17:24:14 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 17:24:14 INFO  time: compiled root in 0.12s[0m
+Oct 15, 2021 5:25:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8034
+Oct 15, 2021 5:25:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8043
+[0m2021.10.15 17:26:07 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 17:26:07 INFO  time: compiled root in 0.13s[0m
+Oct 15, 2021 5:31:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8093
+Oct 15, 2021 5:32:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8100
+[0m2021.10.15 17:37:12 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 17:37:12 INFO  time: compiled root in 0.11s[0m
+[0m2021.10.15 17:37:27 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 17:37:27 INFO  time: compiled root in 0.13s[0m
+[0m2021.10.15 17:37:40 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 17:37:40 INFO  time: compiled root in 0.25s[0m
+[0m2021.10.15 17:39:23 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 17:39:23 INFO  time: compiled root in 0.12s[0m
+[0m2021.10.15 17:40:43 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 17:40:43 INFO  time: compiled root in 26ms[0m
+[0m2021.10.15 17:40:49 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 17:40:49 INFO  time: compiled root in 0.12s[0m
+[0m2021.10.15 17:41:10 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 17:41:10 INFO  time: compiled root in 0.12s[0m
+[0m2021.10.15 17:41:47 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 17:41:47 INFO  time: compiled root in 0.12s[0m
+Oct 15, 2021 5:43:21 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
