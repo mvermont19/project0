@@ -7,7 +7,7 @@ import java.io._
 import example.Helpers._
 import org.mongodb.scala._ 
 import javax.print.Doc
-
+import org.mongodb.scala.model.Filters._
 
 /**
   * This main method in the beginning reads in a csv file and creates a mongodb database and collection
@@ -103,16 +103,81 @@ object Main {
       }
       
 
-      var answer: Int = 9
-      while(answer != 9){
-
-        // answer = getUserInput() match {
-        //   case 1 => println(answer + "")
-        //   case _ => println("nothing")
-        // }
+      var answer: Int = 0
+      while(answer != 4){
+        println("Please choose an option to learn about the NHL: ")
+        println("1. Player Info \n2. Team Totals \n3. Changes \n4. Exit")
+        answer = getUserInput()
+        answer match {
+          case 1 => {
+            println("What would you like to know about the Players: ")
+            println("1. Total Points \n2. Shooting % \n3. Goals per Game \n4. Lefties vs Righties \n5. Position-wise")
+            answer = getUserInput()
+            answer match {
+              case 1 => {
+                //Points
+              }
+              case 2 => {
+                //Shooting %
+              }
+              case 3 => {
+                //Goals per game
+              }
+              case 4 => {
+                //L v R
+              }
+              case 5 => {
+                //Position
+              }
+            }
+          }
+          case 2 => {
+            println("What would you like to know about the Teams: ")
+            println("1. Total Goals \n2. Shooting % \n3. Goals per Game \n4. Show Players per Team")
+            answer = getUserInput()
+            answer match {
+              case 1 => {
+                //Goals
+              }
+              case 2 => {
+                //Shooting %
+              }
+              case 3 => {
+                //Goals per game
+              }
+              case 4 =>{
+                //Player grouping
+              }
+              case _ => println("Not a valid answer. Try again")
+            }
+          }
+          case 3 => {
+            println("What changes would you like to make: ")
+            println("1. Create a player \n2. Change a player's stats \n3. Delete a player ")
+            answer = getUserInput()
+            answer match {
+              case 1 => {
+                //Create a player
+              }
+              case 2 => {
+                //Change a player
+              }
+              case 3 => {
+                //Delete a player
+              }
+              case _ => println("Not a valid answer. Try again")
+            }
+          }
+          case 4 => {
+            println("Exiting the program. Goodbye!")
+          }
+          case _ => println("Not a valid answer. Try again")
+        }
 
       }
-
+      col.drop()
+      col2.drop()
+      client.close()
     }
 
     /**
@@ -128,18 +193,18 @@ object Main {
 
       while(!validAnswer){
         userInput = StdIn.readLine()
-        userInput.trim()
         if(userInput.isEmpty())  {
           println("Please give an answer")
         }
         else {
           var num: Char = userInput.charAt(0)
-          if(num.isDigit && (userInput.toInt == 1 || userInput.toInt == 9)){
+          if(num.isDigit && (userInput.toInt == 1 || userInput.toInt == 2
+                              || userInput.toInt == 3 || userInput.toInt == 4  || userInput.toInt == 5)){
             validAnswer = true
             answer = userInput.toInt
           }
           else{
-          println("Not a valid answer. Try again")
+            println("Not a valid answer. Try again")
           }
         }
       }

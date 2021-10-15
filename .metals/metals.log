@@ -39071,3 +39071,9 @@ Starting thread that pumps server stdout and redirects it to the client stdout..
 [0m2021.10.15 12:49:03 INFO  time: compiled root in 0.97s[0m
 Oct 15, 2021 12:49:32 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+[0m2021.10.15 12:53:51 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 12:53:51 INFO  time: compiled root in 0.43s[0m
+[0m2021.10.15 12:54:16 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 12:54:16 INFO  time: compiled root in 0.75s[0m
+[0m2021.10.15 12:56:12 INFO  compiling root (1 scala source)[0m
+[0m2021.10.15 12:56:12 INFO  time: compiled root in 0.66s[0m
