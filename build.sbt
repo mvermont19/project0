@@ -9,7 +9,8 @@ lazy val root = (project in file("."))
   .settings(
     name := "project0",
     libraryDependencies += scalaTest % Test,
-    libraryDependencies += "org.mongodb.scala" %% "mongo-scala-driver" % "2.8.0"
+    libraryDependencies += "org.mongodb.scala" %% "mongo-scala-driver" % "2.8.0",
+    libraryDependencies += "net.liftweb" %% "lift-json" % "3.5.0"
   )
 
 // Uncomment the following for publishing to Sonatype.

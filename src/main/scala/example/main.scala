@@ -18,6 +18,9 @@ import com.mongodb.client.model.Aggregates
 import com.mongodb.client.model.Accumulators
 import com.mongodb.client.model.Projections
 
+//import net.liftweb.json._
+
+
 
 /**
   * This main method in the beginning reads in a csv file and creates a mongodb database and collection
@@ -137,32 +140,45 @@ object Main {
                 //Points
                 // col.aggregate(
                 //   Seq(
-                //    // Aggregates.group(
-                //     //  "$goals", Accumulators.sum("add", 1)
-                //     //),
-
-                //     Aggregates.project(
-                //       Projections.fields(
-                //         Projections.excludeId(),
-                //         Projections.include("name"),
-                //         Projections.include("goals"),
-                //         Projections.include("assists"),
-                //         Projections.computed("points", Accumulators.sum("goals", "add")
-                //         )))
-                //     //     Projections.include(Accumulators.sum("sum", 1))
-                //         //: {Accumulators.sum("$goals", 1), Accumulators.sum("$assists", 1)}))
-                //       )
-                //    // )
-
-                //   //  group(Document("_id" -> "$name"), Accumulators.sum("goals", 1), Accumulators.sum("assists", 1)),
-                //   //   project(Document(
-                //   //     "name" -> "$name",
-                //   //     "goals" -> "$goals",
-                //   //     "assists" -> "$assists",
-                //   //     "points" -> "points"
-                //   //   ))
-                //   //)
+                //     //group("$name", Accumulators.sum("goals", "$goals"), Accumulators.sum("assists", "$assists")),
+                //     group("$name", Accumulators.sum("points", Accumulators.sum("goals", "$goals") + Accumulators.sum("assists", "$assists"))),
+                //     project(
+                //       include("name", "goals", "assists")
+                //     )
+                //   )
                 // ).printResults()
+
+
+
+
+
+                // val players = col
+                //   .aggregate(
+                //     Seq(
+                //       Aggregates.group(
+                //         "$name",
+                //         Accumulators.sum("goals", 1),
+                //         Accumulators.sum("assists", 1)
+                //       )
+                //     )
+                //   ).results()
+
+                // implicit val formats = DefaultFormats
+
+                // case class Player(name: String, goals: Int, assists: Int)
+
+                // for (player <- players) {
+	              //   // Convert the doc into a proper JSON string.
+                //   val jsonString = player.toJson()
+                //   //println(jsonString)
+	              //   // Convert the JSON string into a JSON object.
+                //   val jValue = parse(jsonString)
+                //   // create a Player object from the string
+                //   val playersDoc = jValue.extract[Player]
+	              //   // Calculate the total points and print.
+                //   val total = playersDoc.goals + playersDoc.assists
+                //   println(s"Player: ${playersDoc.name}, goals: ${playersDoc.goals}, assists: ${playersDoc.assists}, Total Points: $total")
+                // }
               }
               case 2 => {
                 //Shooting %
@@ -172,37 +188,25 @@ object Main {
               }
               case 4 => {
                 //L v R
-                // col.aggregate(
-                //   Seq(
-                //     group(Document(
-                //       {"_id" : "$hand",
-                //       {"TotalGoals" : {"$sum" : "$goals"}}}
-                //       )
-                //     )
-                //     // project(
-                //     //   "_id" : 0,
-                //     //   "hand" : _id,
-                //     //   "Total Goals": 1
-                //     // )
-                //   )
-                // ).printResults()
+                col.aggregate(
+                  Seq(
+                    group("$hand", Accumulators.sum("goals", "$goals")),
+                    project(
+                      include("hand", "goals")
+                    )
+                  )
+                ).printResults()
               }
               case 5 => {
                 //Position
-                // col.aggregate(
-                //   Seq(
-                //     group(Document(
-                //       {"_id" : "$position",
-                //       {"TotalGoals" : {"$sum" : "$goals"}}}
-                //       )
-                //     )
-                //     // project(
-                //     //   "_id" : 0,
-                //     //   "hand" : _id,
-                //     //   "Total Goals": 1
-                //     // )
-                //   )
-                // ).printResults()
+                col.aggregate(
+                  Seq(
+                    group("$position", Accumulators.sum("goals", "$goals")),
+                    project(
+                      include("position", "goals")
+                    )
+                  )
+                ).printResults()
               }
             }
           }
@@ -211,20 +215,14 @@ object Main {
             answer match {
               case 1 => {
                 //Goals
-                // col.aggregate(
-                //   Seq(
-                //     group(Document(
-                //       {"_id" : "$team",
-                //       {"TotalGoals" : {"$sum" : "$goals"}}}
-                //       )
-                //     )
-                //     // project(
-                //     //   "_id" : 0,
-                //     //   "hand" : _id,
-                //     //   "Total Goals": 1
-                //     // )
-                //   )
-                // ).printResults()
+                col.aggregate(
+                  Seq(
+                    group("$team", Accumulators.sum("goals", "$goals")),
+                    project(
+                      include("team", "goals"),
+                    )
+                  )
+                ).printResults()
               }
               case 2 => {
                 //Shooting %
@@ -234,14 +232,11 @@ object Main {
               }
               case 4 =>{
                 //Player grouping
-                //Aggregates.sort(orderBy(descending("team"))).printResults
-                // col.aggregate(
-                //   Seq(
-                //     group(
-                //       sort(orderBy(descending("team")))
-                //     )
-                //   )
-                // ).printResults()
+                col.aggregate(
+                  Seq(
+                      sort(orderBy(descending("team")))
+                  )
+                ).printResults()
               }
               case _ => println("Not a valid answer. Try again")
             }
@@ -281,15 +276,44 @@ object Main {
                 )
                 id1 += 1
 
-                col.insertOne(doc)
+                val observable: Observable[Completed] = col.insertOne(doc)
+                observable.subscribe(new Observer[Completed] {
+                  override def onNext(result: Completed): Unit = println("Inserted")
+                  override def onError(e: Throwable): Unit = println("Failed")
+                  override def onComplete(): Unit = println("Completed")
+                })
                 col.find(equal("name", name)).first().printHeadResult()
 
               }
               case 2 => {
                 //Change a player
+                println("Please give the players name: ")
+                var name: String = StdIn.readLine()
+                col.find(equal("name", name)).first().printHeadResult()
+                println("What would you like to update about the player: ")
+                println("1. Goals \n2. Assists")
+                var choice: Int = StdIn.readInt() 
+                choice match {
+                  case 1 => {
+                    println("Please enter the new number of goals: ")
+                    var g = StdIn.readInt()
+                    col.updateOne(equal("name", name), set("goals", g)).printHeadResult("Update Result: ")
+                  }
+                  case 2 => {
+                    println("Please enter the new number of assists: ")
+                    var a = StdIn.readInt()
+                    col.updateOne(equal("name", name), set("assists", a)).printHeadResult("Update Result: ")
+                  }
+                }
+                col.find(equal("name", name)).first().printHeadResult()
+
               }
               case 3 => {
                 //Delete a player
+                println("Please give the players name: ")
+                var name: String = StdIn.readLine()
+                col.find(equal("name", name)).first().printHeadResult()
+                col.deleteOne(equal("$name", name))
               }
               case _ => println("Not a valid answer. Try again")
             }
