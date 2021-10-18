@@ -420,7 +420,7 @@ object Main {
                 println("Please give the players name: ")
                 var name: String = StdIn.readLine()
                 col.find(equal("name", name)).first().printHeadResult()
-                col.deleteOne(equal("$name", name)).printHeadResult("Delete Result: ")
+                col.deleteOne(equal("name", name)).printHeadResult("Delete Result: ")
               }
               case _ => println("Not a valid answer. Try again")
             }
