@@ -394,8 +394,15 @@ object Main {
               }
               case 2 => {
                 //Change a player
-                println("Please give the players name: ")
-                var name: String = StdIn.readLine()
+                var name: String = ""
+                var found = false
+                while(!found){
+                  println("Please give the players name: ")
+                  name = StdIn.readLine()
+                  if(col.find(equal("name", name)).first() != null){
+                    found = true
+                  }
+                }
                 col.find(equal("name", name)).first().printHeadResult()
                 println("What would you like to update about the player: ")
                 println("1. Goals \n2. Assists")

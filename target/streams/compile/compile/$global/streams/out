@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\matth\revature\project0\src\main\scala\example\main.scala:337:87: Missing conversion operator in '%'; use %% for literal %, %n for newline[0m
-[0m[[0m[31merror[0m] [0m[0m                  println(f"Player: ${teamDoc._id}, goals: ${teamDoc.goals}, Shooting %: $gpg%.2f")[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\matth\revature\project0\src\main\scala\example\main.scala:401:63: not found: value NULL[0m
+[0m[[0m[31merror[0m] [0m[0m                  if(col.find(equal("name", name)).first() == NULL){[0m
+[0m[[0m[31merror[0m] [0m[0m                                                              ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
