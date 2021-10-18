@@ -4,11 +4,11 @@ import scala.io._
 import scala.collection._
 import java.io._
 import scala.concurrent._
-
-import example.Helpers._
-import org.mongodb.scala._ 
 import javax.print.Doc
 
+import example.Helpers._
+
+import org.mongodb.scala._
 import org.mongodb.scala.model.Filters._
 import org.mongodb.scala.model.Sorts._
 import org.mongodb.scala.model.Projections._
@@ -18,13 +18,14 @@ import com.mongodb.client.model.Aggregates
 import com.mongodb.client.model.Accumulators
 import com.mongodb.client.model.Projections
 
-//import net.liftweb.json._
+import net.liftweb.json._
 
 
 
 /**
   * This main method in the beginning reads in a csv file and creates a mongodb database and collection
   * to insert all the information from the csv file into the database
+  * Then it goes on to ask the user what they would like to do
   */
 object Main {
     def main(args: Array[String]){
@@ -39,7 +40,6 @@ object Main {
       var id1: Int = 1
       var id2: Int = 1001
       //data gotten from nhl.com for the 2019-2020 season
-
       try{
         val bufferedSource = Source.fromFile("C:/Users/matth/revature/project0/src/main/csv/nhl.csv")
         for(line <- bufferedSource.getLines().drop(1)){
@@ -61,7 +61,7 @@ object Main {
           var otg = split(15).toInt
           var gwg = split(15).toInt
 
-
+          //Data that will be used a lot
           var doc: Document = Document(
             "_id" -> id1,
             "name" -> split(0),
@@ -74,6 +74,8 @@ object Main {
             "shots" -> shots
           )
           id1 += 1
+
+          //Data that will not be used
           var doc2: Document = Document(
             "_id" -> id2,
             "playerID" -> id1,
@@ -91,6 +93,8 @@ object Main {
             "face-off win %" -> split(19)
           )
           id2 += 1
+
+          //To ensure that the data was inserted into the db
           val observable: Observable[Completed] = col.insertOne(doc)
           observable.subscribe(new Observer[Completed] {
             override def onNext(result: Completed): Unit = println("Inserted")
@@ -115,6 +119,7 @@ object Main {
         }
       }
       
+      //Now comes where the user inputs what they want to see
       var answer: Int = 0
       var exit: Boolean = false
       while(!exit){
@@ -134,57 +139,104 @@ object Main {
         answer = getUserInput(intro, startingScreen)
         answer match {
           case 1 => {
+            //Player info
             answer = getUserInput(playerInfo, playerChoices)
             answer match {
               case 1 => {
                 //Points
-                // col.aggregate(
-                //   Seq(
-                //     //group("$name", Accumulators.sum("goals", "$goals"), Accumulators.sum("assists", "$assists")),
-                //     group("$name", Accumulators.sum("points", Accumulators.sum("goals", "$goals") + Accumulators.sum("assists", "$assists"))),
-                //     project(
-                //       include("name", "goals", "assists")
-                //     )
-                //   )
-                // ).printResults()
+                val players = col
+                  .aggregate(
+                    Seq(
+                      Aggregates.group(
+                        "$name",
+                        Accumulators.sum("goals", "$goals"),
+                        Accumulators.sum("assists", "$assists")
+                      ),
+                      Aggregates.sort(orderBy(ascending("goals"), ascending("assists")))
+                    )
+                  ).results()
 
+                implicit val formats = DefaultFormats
 
+                case class Player(_id: String, goals: Int, assists: Int)
 
-
-
-                // val players = col
-                //   .aggregate(
-                //     Seq(
-                //       Aggregates.group(
-                //         "$name",
-                //         Accumulators.sum("goals", 1),
-                //         Accumulators.sum("assists", 1)
-                //       )
-                //     )
-                //   ).results()
-
-                // implicit val formats = DefaultFormats
-
-                // case class Player(name: String, goals: Int, assists: Int)
-
-                // for (player <- players) {
-	              //   // Convert the doc into a proper JSON string.
-                //   val jsonString = player.toJson()
-                //   //println(jsonString)
-	              //   // Convert the JSON string into a JSON object.
-                //   val jValue = parse(jsonString)
-                //   // create a Player object from the string
-                //   val playersDoc = jValue.extract[Player]
-	              //   // Calculate the total points and print.
-                //   val total = playersDoc.goals + playersDoc.assists
-                //   println(s"Player: ${playersDoc.name}, goals: ${playersDoc.goals}, assists: ${playersDoc.assists}, Total Points: $total")
-                // }
+                for (player <- players) {
+	                // Convert the doc into a proper JSON string.
+                  val jsonString = player.toJson()
+                  //println(jsonString)
+	                // Convert the JSON string into a JSON object.
+                  val jValue = parse(jsonString)
+                  // create a Player object from the string
+                  val playersDoc = jValue.extract[Player]
+	                // Calculate the total points and print.
+                  val total = playersDoc.goals + playersDoc.assists
+                  println(s"Player: ${playersDoc._id}, goals: ${playersDoc.goals}, assists: ${playersDoc.assists}, Total Points: $total")
+                }
               }
               case 2 => {
                 //Shooting %
+                val players = col
+                  .aggregate(
+                    Seq(
+                      Aggregates.group(
+                        "$name",
+                        Accumulators.sum("goals", "$goals"),
+                        Accumulators.sum("shots", "$shots")
+                      ),
+                      Aggregates.sort(orderBy(ascending("goals")))
+                    )
+                  ).results()
+
+                implicit val formats = DefaultFormats
+
+                case class Player(_id: String, goals: Int, shots: Int)
+
+                for (player <- players) {
+	                // Convert the doc into a proper JSON string.
+                  val jsonString = player.toJson()
+                  //println(jsonString)
+	                // Convert the JSON string into a JSON object.
+                  val jValue = parse(jsonString)
+                  // create a Player object from the string
+                  val playersDoc = jValue.extract[Player]
+	                // Calculate the shooting % and print.
+                  var percent : Double = 0.0
+                  if(playersDoc.shots != 0){
+                    percent = (playersDoc.goals.toDouble / playersDoc.shots.toDouble) * 100
+                  } 
+                  println(f"Player: ${playersDoc._id}, goals: ${playersDoc.goals}, shots: ${playersDoc.shots}, Shooting Per: $percent%.2f")
+                }
               }
               case 3 => {
                 //Goals per game
+                val players = col
+                  .aggregate(
+                    Seq(
+                      Aggregates.group(
+                        "$name",
+                        Accumulators.sum("goals", "$goals"),
+                        Accumulators.sum("games", "$games played")
+                      ),
+                      Aggregates.sort(orderBy(ascending("goals")))
+                    )
+                  ).results()
+
+                implicit val formats = DefaultFormats
+
+                case class Player(_id: String, goals: Int, games: Int)
+
+                for (player <- players) {
+	                // Convert the doc into a proper JSON string.
+                  val jsonString = player.toJson()
+                  //println(jsonString)
+	                // Convert the JSON string into a JSON object.
+                  val jValue = parse(jsonString)
+                  // create a Player object from the string
+                  val playersDoc = jValue.extract[Player]
+	                // Calculate the goals per game and print.
+                  val gpg = playersDoc.goals.toDouble / playersDoc.games.toDouble
+                  println(f"Player: ${playersDoc._id}, goals: ${playersDoc.goals}, games: ${playersDoc.games}, Goals per Game: $gpg%.2f")
+                }
               }
               case 4 => {
                 //L v R
@@ -211,6 +263,7 @@ object Main {
             }
           }
           case 2 => {
+            //Team info
             answer = getUserInput(teamInfo, teamChoices)
             answer match {
               case 1 => {
@@ -226,15 +279,69 @@ object Main {
               }
               case 2 => {
                 //Shooting %
+                val teams = col
+                  .aggregate(
+                    Seq(
+                      Aggregates.group(
+                        "$team",
+                        Accumulators.sum("goals", "$goals"),
+                        Accumulators.sum("shots", "$shots")
+                      )
+                    )
+                  ).results()
+
+                implicit val formats = DefaultFormats
+
+                case class Team(_id: String, goals: Int, shots: Int)
+
+                for (team <- teams) {
+	                // Convert the doc into a proper JSON string.
+                  val jsonString = team.toJson()
+                  //println(jsonString)
+	                // Convert the JSON string into a JSON object.
+                  val jValue = parse(jsonString)
+                  // create a Team object from the string
+                  val teamDoc = jValue.extract[Team]
+	                // Calculate the shooting % and print.
+                  var percent = (teamDoc.goals.toDouble / teamDoc.shots.toDouble) * 100
+                  println(f"Player: ${teamDoc._id}, goals: ${teamDoc.goals}, shots: ${teamDoc.shots}, Shooting Per: $percent%.2f")
+                }
               }
               case 3 => {
                 //Goals per game
+                val teams = col
+                  .aggregate(
+                    Seq(
+                      Aggregates.group(
+                        "$team",
+                        Accumulators.sum("goals", "$goals")
+                      )
+                    )
+                  ).results()
+
+                implicit val formats = DefaultFormats
+
+                case class Team(_id: String, goals: Int)
+
+                for (team <- teams) {
+	                // Convert the doc into a proper JSON string.
+                  val jsonString = team.toJson()
+                  //println(jsonString)
+	                // Convert the JSON string into a JSON object.
+                  val jValue = parse(jsonString)
+                  // create a Team object from the string
+                  val teamDoc = jValue.extract[Team]
+	                // Calculate the shooting % and print.
+                  //Because of the shortend season, each team only played 71 games
+                  var gpg = teamDoc.goals.toDouble / 71
+                  println(f"Player: ${teamDoc._id}, goals: ${teamDoc.goals}, Goals per Game: $gpg%.2f")
+                }
               }
               case 4 =>{
                 //Player grouping
                 col.aggregate(
                   Seq(
-                      sort(orderBy(descending("team")))
+                      sort(orderBy(ascending("team")))
                   )
                 ).printResults()
               }
@@ -313,7 +420,7 @@ object Main {
                 println("Please give the players name: ")
                 var name: String = StdIn.readLine()
                 col.find(equal("name", name)).first().printHeadResult()
-                col.deleteOne(equal("$name", name))
+                col.deleteOne(equal("$name", name)).printHeadResult("Delete Result: ")
               }
               case _ => println("Not a valid answer. Try again")
             }

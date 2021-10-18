@@ -40043,3 +40043,475 @@ No more data in the server stdin, exiting...[0m2021.10.18 10:26:21 INFO  Attemp
 [0m2021.10.18 10:26:26 WARN  unsupported Scala 2.12.7[0m
 [0m2021.10.18 10:26:34 WARN  there was one deprecation warning (since 2.4); re-run with -deprecation for details[0m
 [0m2021.10.18 10:26:34 INFO  time: compiled root in 8.79s[0m
+[0m2021.10.18 10:27:07 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 10:27:09 INFO  time: compiled root in 2.03s[0m
+[0m2021.10.18 10:30:10 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 10:30:14 INFO  time: compiled root in 3.92s[0m
+[0m2021.10.18 10:30:22 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.18 10:33:02 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 10:33:02 INFO  time: compiled root in 0.75s[0m
+[0m2021.10.18 10:33:28 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 10:33:29 INFO  time: compiled root in 1.13s[0m
+[0m2021.10.18 10:33:41 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.18 10:33:45 INFO  running 'C:\Users\matth\.jabba\jdk\adopt@1.8.0-292\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\matth\AppData\Local\Temp\metals7477049837654545327\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.10.18 10:33:47 INFO  running 'C:\Users\matth\.jabba\jdk\adopt@1.8.0-292\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\matth\AppData\Local\Temp\metals2623442517761253306\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.10.18 10:33:50 INFO  [info] Loading settings for project project0-build-build from metals.sbt ...[0m
+[0m2021.10.18 10:33:50 INFO  [info] Loading project definition from C:\Users\matth\revature\project0\project\project[0m
+[0m2021.10.18 10:33:52 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.18 10:33:53 INFO  user cancelled sbt bloopInstall[0m
+[0m2021.10.18 10:33:53 INFO  time: ran 'sbt bloopInstall' in 5.54s[0m
+[0m2021.10.18 10:33:53 INFO  [info] Loading settings for project project0-build from metals.sbt ...[0m
+[0m2021.10.18 10:33:53 INFO  [info] Loading project definition from C:\Users\matth\revature\project0\project[0m
+[0m2021.10.18 10:33:54 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.18 10:33:54 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.18 10:33:57 INFO  [success] Generated .bloop\project0-build.json[0m
+[0m2021.10.18 10:33:57 INFO  [success] Total time: 4 s, completed Oct 18, 2021 10:33:57 AM[0m
+[0m2021.10.18 10:33:57 INFO  [info] Loading settings for project root from build.sbt ...[0m
+[0m2021.10.18 10:33:58 INFO  [info] Set current project to project0 (in build file:/C:/Users/matth/revature/project0/)[0m
+[0m2021.10.18 10:33:58 INFO  [info] Updating ...[0m
+[0m2021.10.18 10:33:58 INFO  [info] Done updating.[0m
+[0m2021.10.18 10:33:58 INFO  [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.[0m
+[0m2021.10.18 10:33:58 INFO  [success] Generated .bloop\root-test.json[0m
+[0m2021.10.18 10:33:58 INFO  [success] Generated .bloop\root.json[0m
+[0m2021.10.18 10:33:58 INFO  [success] Total time: 1 s, completed Oct 18, 2021 10:33:58 AM[0m
+[0m2021.10.18 10:33:59 INFO  time: ran 'sbt bloopInstall' in 13s[0m
+[0m2021.10.18 10:33:59 INFO  Disconnecting from Bloop session...[0m
+[0m2021.10.18 10:33:59 INFO  Shut down connection with build server.[0m
+[0m2021.10.18 10:33:59 INFO  Shut down connection with build server.[0m
+[0m2021.10.18 10:33:59 INFO  Attempting to connect to the build server...[0m
+[0m2021.10.18 10:34:00 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.10.18 10:34:00 INFO  Attempting to connect to the build server...[0m
+[0m2021.10.18 10:34:00 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.10.18 10:34:00 INFO  time: Connected to build server in 1.71s[0m
+[0m2021.10.18 10:34:00 INFO  Connected to Build server: Bloop v1.4.9[0m
+[0m2021.10.18 10:34:00 INFO  time: indexed workspace in 0.72s[0m
+[0m2021.10.18 10:34:02 INFO  no build target: using presentation compiler with only scala-library: 2.12.8[0m
+[0m2021.10.18 10:34:02 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.18 10:34:58 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 10:34:58 INFO  time: compiled root in 83ms[0m
+[0m2021.10.18 10:35:20 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 10:35:21 INFO  time: compiled root in 1.15s[0m
+[0m2021.10.18 10:36:01 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.18 10:36:03 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.18 10:36:03 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.18 10:36:05 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.18 10:38:47 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 10:38:47 INFO  time: compiled root in 0.34s[0m
+[0m2021.10.18 10:39:36 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 10:39:36 INFO  time: compiled root in 0.4s[0m
+[0m2021.10.18 10:39:41 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 10:39:41 INFO  time: compiled root in 0.27s[0m
+[0m2021.10.18 10:40:45 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 10:40:45 INFO  time: compiled root in 0.33s[0m
+[0m2021.10.18 10:40:54 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 10:40:54 INFO  time: compiled root in 0.34s[0m
+[0m2021.10.18 10:41:02 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 10:41:02 INFO  time: compiled root in 0.28s[0m
+[0m2021.10.18 10:41:04 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 10:41:04 INFO  time: compiled root in 0.21s[0m
+[0m2021.10.18 10:41:22 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 10:41:22 INFO  time: compiled root in 0.63s[0m
+[0m2021.10.18 10:41:49 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 10:41:49 INFO  time: compiled root in 0.83s[0m
+[0m2021.10.18 10:48:25 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 10:48:25 INFO  time: compiled root in 0.33s[0m
+[0m2021.10.18 10:49:33 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 10:49:33 INFO  time: compiled root in 0.26s[0m
+[0m2021.10.18 10:49:52 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 10:49:52 INFO  time: compiled root in 0.62s[0m
+[0m2021.10.18 10:54:48 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 10:54:48 INFO  time: compiled root in 65ms[0m
+[0m2021.10.18 10:55:36 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 10:55:36 INFO  time: compiled root in 50ms[0m
+[0m2021.10.18 10:56:58 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 10:56:58 INFO  time: compiled root in 0.28s[0m
+[0m2021.10.18 10:57:30 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 10:57:30 INFO  time: compiled root in 0.11s[0m
+[0m2021.10.18 10:58:13 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 10:58:13 INFO  time: compiled root in 57ms[0m
+[0m2021.10.18 10:58:48 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 10:58:48 INFO  time: compiled root in 49ms[0m
+[0m2021.10.18 10:59:02 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 10:59:02 INFO  time: compiled root in 0.24s[0m
+[0m2021.10.18 10:59:23 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 10:59:23 INFO  time: compiled root in 0.29s[0m
+[0m2021.10.18 10:59:26 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 10:59:26 INFO  time: compiled root in 0.28s[0m
+[0m2021.10.18 11:00:16 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 11:00:16 INFO  time: compiled root in 0.23s[0m
+[0m2021.10.18 11:00:47 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 11:00:47 INFO  time: compiled root in 0.24s[0m
+[0m2021.10.18 11:01:18 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 11:01:18 INFO  time: compiled root in 0.26s[0m
+[0m2021.10.18 11:01:55 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 11:01:55 INFO  time: compiled root in 0.25s[0m
+[0m2021.10.18 11:02:28 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 11:02:28 INFO  time: compiled root in 0.65s[0m
+[0m2021.10.18 11:02:38 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 11:02:38 INFO  time: compiled root in 0.62s[0m
+[0m2021.10.18 11:07:52 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 11:07:52 INFO  time: compiled root in 0.61s[0m
+[0m2021.10.18 11:08:01 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 11:08:01 INFO  time: compiled root in 0.6s[0m
+[0m2021.10.18 11:09:18 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 11:09:18 INFO  time: compiled root in 0.46s[0m
+[0m2021.10.18 11:10:45 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 11:10:45 INFO  time: compiled root in 35ms[0m
+[0m2021.10.18 11:12:04 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 11:12:04 INFO  time: compiled root in 0.55s[0m
+[0m2021.10.18 11:14:17 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 11:14:17 INFO  time: compiled root in 0.51s[0m
+[0m2021.10.18 11:14:53 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 11:14:53 INFO  time: compiled root in 0.41s[0m
+[0m2021.10.18 11:15:02 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 11:15:02 INFO  time: compiled root in 0.42s[0m
+[0m2021.10.18 11:15:47 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 11:15:47 INFO  time: compiled root in 0.44s[0m
+[0m2021.10.18 11:16:19 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 11:16:19 INFO  time: compiled root in 0.47s[0m
+[0m2021.10.18 11:17:29 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 11:17:29 INFO  time: compiled root in 0.37s[0m
+[0m2021.10.18 11:27:12 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 11:27:12 INFO  time: compiled root in 0.19s[0m
+[0m2021.10.18 11:29:03 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 11:29:03 INFO  time: compiled root in 0.43s[0m
+[0m2021.10.18 11:30:19 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 11:30:19 INFO  time: compiled root in 0.34s[0m
+[0m2021.10.18 11:30:57 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 11:30:57 INFO  time: compiled root in 0.32s[0m
+[0m2021.10.18 11:33:54 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 11:33:54 INFO  time: compiled root in 0.45s[0m
+[0m2021.10.18 11:34:34 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 11:34:34 INFO  time: compiled root in 0.28s[0m
+[0m2021.10.18 11:35:03 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 11:35:03 INFO  time: compiled root in 0.32s[0m
+[0m2021.10.18 11:35:30 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 11:35:30 INFO  time: compiled root in 0.25s[0m
+[0m2021.10.18 11:47:05 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 11:47:05 INFO  time: compiled root in 0.48s[0m
+[0m2021.10.18 11:48:33 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 11:48:33 INFO  time: compiled root in 0.47s[0m
+[0m2021.10.18 11:50:04 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 11:50:04 INFO  time: compiled root in 39ms[0m
+[0m2021.10.18 11:51:06 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:143:36: stale bloop error: illegal start of simple expression
+                    group("$name", var g = Accumulators.sum("goals", "$goals"), Accumulators.sum("assists", "$assists")),
+                                   ^[0m
+[0m2021.10.18 11:51:06 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:215:15: stale bloop error: ')' expected but '}' found.
+              }
+              ^[0m
+[0m2021.10.18 11:51:06 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:143:36: stale bloop error: illegal start of simple expression
+                    group("$name", var g = Accumulators.sum("goals", "$goals"), Accumulators.sum("assists", "$assists")),
+                                   ^[0m
+[0m2021.10.18 11:51:06 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:215:15: stale bloop error: ')' expected but '}' found.
+              }
+              ^[0m
+[0m2021.10.18 11:51:10 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:143:36: stale bloop error: illegal start of simple expression
+                    group("$name", var g = Accumulators.sum("goals", "$goals"), Accumulators.sum("assists", "$assists")),
+                                   ^[0m
+[0m2021.10.18 11:51:10 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:215:15: stale bloop error: ')' expected but '}' found.
+              }
+              ^[0m
+[0m2021.10.18 11:51:10 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:143:36: stale bloop error: illegal start of simple expression
+                    group("$name", var g = Accumulators.sum("goals", "$goals"), Accumulators.sum("assists", "$assists")),
+                                   ^[0m
+[0m2021.10.18 11:51:10 INFO  C:\Users\matth\revature\project0\src\main\scala\example\main.scala:215:15: stale bloop error: ')' expected but '}' found.
+              }
+              ^[0m
+[0m2021.10.18 11:51:13 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 11:51:13 INFO  time: compiled root in 0.18s[0m
+[0m2021.10.18 11:51:28 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 11:51:28 INFO  time: compiled root in 0.36s[0m
+[0m2021.10.18 11:51:38 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 11:51:38 INFO  time: compiled root in 0.4s[0m
+[0m2021.10.18 11:51:55 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 11:51:55 INFO  time: compiled root in 0.54s[0m
+[0m2021.10.18 11:52:24 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 11:52:24 INFO  time: compiled root in 0.31s[0m
+[0m2021.10.18 11:52:52 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 11:52:52 INFO  time: compiled root in 0.32s[0m
+[0m2021.10.18 11:53:18 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 11:53:18 INFO  time: compiled root in 0.3s[0m
+[0m2021.10.18 11:54:41 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 11:54:41 INFO  time: compiled root in 0.31s[0m
+[0m2021.10.18 11:55:04 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 11:55:04 INFO  time: compiled root in 0.44s[0m
+[0m2021.10.18 11:55:35 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 11:55:35 INFO  time: compiled root in 0.25s[0m
+[0m2021.10.18 11:55:56 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 11:55:56 INFO  time: compiled root in 0.25s[0m
+[0m2021.10.18 11:56:19 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 11:56:19 INFO  time: compiled root in 0.27s[0m
+[0m2021.10.18 12:02:52 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 12:02:52 INFO  time: compiled root in 0.32s[0m
+[0m2021.10.18 12:05:18 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 12:05:18 INFO  time: compiled root in 0.45s[0m
+[0m2021.10.18 12:07:29 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 12:07:29 INFO  time: compiled root in 0.27s[0m
+[0m2021.10.18 12:07:41 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 12:07:41 INFO  time: compiled root in 0.26s[0m
+[0m2021.10.18 12:08:10 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 12:08:10 INFO  time: compiled root in 0.27s[0m
+[0m2021.10.18 12:10:10 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 12:10:10 INFO  time: compiled root in 0.33s[0m
+[0m2021.10.18 12:12:18 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 12:12:18 INFO  time: compiled root in 0.17s[0m
+[0m2021.10.18 12:14:05 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 12:14:05 INFO  time: compiled root in 0.23s[0m
+[0m2021.10.18 12:17:54 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 12:17:54 INFO  time: compiled root in 0.45s[0m
+[0m2021.10.18 12:19:21 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 12:19:21 INFO  time: compiled root in 0.41s[0m
+[0m2021.10.18 12:20:55 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 12:20:55 INFO  time: compiled root in 0.19s[0m
+[0m2021.10.18 12:21:10 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 12:21:10 INFO  time: compiled root in 0.51s[0m
+[0m2021.10.18 12:21:20 INFO  running 'C:\Users\matth\.jabba\jdk\adopt@1.8.0-292\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\matth\AppData\Local\Temp\metals5568979500633800059\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.10.18 12:21:24 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.18 12:21:25 INFO  [info] Loading settings for project project0-build-build from metals.sbt ...[0m
+[0m2021.10.18 12:21:25 INFO  [info] Loading project definition from C:\Users\matth\revature\project0\project\project[0m
+[0m2021.10.18 12:21:28 INFO  [info] Loading settings for project project0-build from metals.sbt ...[0m
+[0m2021.10.18 12:21:28 INFO  [info] Loading project definition from C:\Users\matth\revature\project0\project[0m
+[0m2021.10.18 12:21:31 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.18 12:21:32 INFO  [success] Generated .bloop\project0-build.json[0m
+[0m2021.10.18 12:21:32 INFO  [success] Total time: 4 s, completed Oct 18, 2021 12:21:32 PM[0m
+[0m2021.10.18 12:21:32 INFO  [info] Loading settings for project root from build.sbt ...[0m
+[0m2021.10.18 12:21:32 INFO  [info] Set current project to project0 (in build file:/C:/Users/matth/revature/project0/)[0m
+[0m2021.10.18 12:21:32 INFO  [info] Updating ...[0m
+[0m2021.10.18 12:21:33 INFO  [info] Done updating.[0m
+[0m2021.10.18 12:21:33 INFO  [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.[0m
+[0m2021.10.18 12:21:33 INFO  [success] Generated .bloop\root.json[0m
+[0m2021.10.18 12:21:33 INFO  [success] Generated .bloop\root-test.json[0m
+[0m2021.10.18 12:21:33 INFO  [success] Total time: 1 s, completed Oct 18, 2021 12:21:33 PM[0m
+[0m2021.10.18 12:21:33 INFO  time: ran 'sbt bloopInstall' in 12s[0m
+[0m2021.10.18 12:21:33 INFO  Disconnecting from Bloop session...[0m
+[0m2021.10.18 12:21:33 INFO  Shut down connection with build server.[0m
+[0m2021.10.18 12:21:33 INFO  Shut down connection with build server.[0m
+[0m2021.10.18 12:21:33 INFO  Attempting to connect to the build server...[0m
+[0m2021.10.18 12:21:35 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.10.18 12:21:35 INFO  Attempting to connect to the build server...[0m
+[0m2021.10.18 12:21:35 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.10.18 12:21:35 INFO  time: Connected to build server in 1.87s[0m
+[0m2021.10.18 12:21:35 INFO  Connected to Build server: Bloop v1.4.9[0m
+[0m2021.10.18 12:21:35 INFO  time: Imported build in 0.11s[0m
+[0m2021.10.18 12:21:36 INFO  time: indexed workspace in 1.17s[0m
+[0m2021.10.18 12:21:39 INFO  no build target: using presentation compiler with only scala-library: 2.12.8[0m
+[0m2021.10.18 12:21:39 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.18 12:21:40 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.18 14:02:54 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.18 14:04:09 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 14:04:09 INFO  time: compiled root in 0.86s[0m
+[0m2021.10.18 14:04:19 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 14:04:20 INFO  time: compiled root in 1.12s[0m
+[0m2021.10.18 14:11:46 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.18 14:11:46 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.18 14:11:49 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.18 14:11:53 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.18 14:12:01 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.18 14:12:06 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.18 14:12:08 INFO  running 'C:\Users\matth\.jabba\jdk\adopt@1.8.0-292\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\matth\AppData\Local\Temp\metals6628429403768469092\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.10.18 14:12:12 INFO  [info] Loading settings for project project0-build-build from metals.sbt ...[0m
+[0m2021.10.18 14:12:12 INFO  [info] Loading project definition from C:\Users\matth\revature\project0\project\project[0m
+[0m2021.10.18 14:12:13 INFO  [info] Loading settings for project project0-build from metals.sbt ...[0m
+[0m2021.10.18 14:12:13 INFO  [info] Loading project definition from C:\Users\matth\revature\project0\project[0m
+[0m2021.10.18 14:12:17 INFO  [success] Generated .bloop\project0-build.json[0m
+[0m2021.10.18 14:12:17 INFO  [success] Total time: 4 s, completed Oct 18, 2021 2:12:18 PM[0m
+[0m2021.10.18 14:12:21 INFO  [info] Loading settings for project root from build.sbt ...[0m
+[0m2021.10.18 14:12:21 INFO  [info] Set current project to project0 (in build file:/C:/Users/matth/revature/project0/)[0m
+[0m2021.10.18 14:12:21 INFO  [info] Updating ...[0m
+[0m2021.10.18 14:12:22 INFO  [info] Done updating.[0m
+[0m2021.10.18 14:12:22 INFO  [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.[0m
+[0m2021.10.18 14:12:22 INFO  [success] Generated .bloop\root.json[0m
+[0m2021.10.18 14:12:22 INFO  [success] Generated .bloop\root-test.json[0m
+[0m2021.10.18 14:12:22 INFO  [success] Total time: 1 s, completed Oct 18, 2021 2:12:22 PM[0m
+[0m2021.10.18 14:12:22 INFO  time: ran 'sbt bloopInstall' in 14s[0m
+[0m2021.10.18 14:12:22 INFO  Disconnecting from Bloop session...[0m
+[0m2021.10.18 14:12:22 INFO  Shut down connection with build server.[0m
+[0m2021.10.18 14:12:22 INFO  Shut down connection with build server.[0m
+[0m2021.10.18 14:12:22 INFO  Attempting to connect to the build server...[0m
+[0m2021.10.18 14:12:23 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.10.18 14:12:23 INFO  Attempting to connect to the build server...[0m
+[0m2021.10.18 14:12:23 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.10.18 14:12:23 INFO  time: Connected to build server in 1.19s[0m
+[0m2021.10.18 14:12:23 INFO  Connected to Build server: Bloop v1.4.9[0m
+[0m2021.10.18 14:12:23 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.18 14:12:23 INFO  time: indexed workspace in 0.6s[0m
+[0m2021.10.18 14:12:24 INFO  compiling root (3 scala sources)[0m
+[0m2021.10.18 14:12:25 INFO  no build target: using presentation compiler with only scala-library: 2.12.8[0m
+[0m2021.10.18 14:12:25 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.18 14:12:25 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.18 14:12:25 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.18 14:12:25 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.18 14:12:25 WARN  there was one deprecation warning (since 2.4); re-run with -deprecation for details[0m
+[0m2021.10.18 14:12:25 INFO  time: compiled root in 1.15s[0m
+[0m2021.10.18 14:12:25 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.18 14:12:28 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.18 14:12:30 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.18 14:12:45 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.18 14:12:45 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.18 14:12:45 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.18 14:12:46 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.18 14:12:46 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.18 14:12:48 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.18 14:12:54 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.18 14:12:55 INFO  running 'C:\Users\matth\.jabba\jdk\adopt@1.8.0-292\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\matth\AppData\Local\Temp\metals3159304607232029676\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.10.18 14:12:59 INFO  [info] Loading settings for project project0-build-build from metals.sbt ...[0m
+[0m2021.10.18 14:12:59 INFO  [info] Loading project definition from C:\Users\matth\revature\project0\project\project[0m
+[0m2021.10.18 14:13:01 INFO  [info] Loading settings for project project0-build from metals.sbt ...[0m
+[0m2021.10.18 14:13:01 INFO  [info] Loading project definition from C:\Users\matth\revature\project0\project[0m
+[0m2021.10.18 14:13:04 INFO  [success] Generated .bloop\project0-build.json[0m
+[0m2021.10.18 14:13:04 INFO  [success] Total time: 3 s, completed Oct 18, 2021 2:13:04 PM[0m
+[0m2021.10.18 14:13:07 INFO  [info] Loading settings for project root from build.sbt ...[0m
+[0m2021.10.18 14:13:07 INFO  [info] Set current project to project0 (in build file:/C:/Users/matth/revature/project0/)[0m
+[0m2021.10.18 14:13:07 INFO  [info] Updating ...[0m
+[0m2021.10.18 14:13:07 INFO  [warn] 	module not found: net.liftweb.json#lift-json_2.12;3.5.0[0m
+[0m2021.10.18 14:13:07 INFO  [warn] ==== local: tried[0m
+[0m2021.10.18 14:13:07 INFO  [warn]   C:\Users\matth\.ivy2\local\net.liftweb.json\lift-json_2.12\3.5.0\ivys\ivy.xml[0m
+[0m2021.10.18 14:13:07 INFO  [warn] ==== public: tried[0m
+[0m2021.10.18 14:13:07 INFO  [warn]   https://repo1.maven.org/maven2/net/liftweb/json/lift-json_2.12/3.5.0/lift-json_2.12-3.5.0.pom[0m
+[0m2021.10.18 14:13:07 INFO  [warn] ==== local-preloaded-ivy: tried[0m
+[0m2021.10.18 14:13:07 INFO  [warn]   C:\Users\matth\.sbt\preloaded\net.liftweb.json\lift-json_2.12\3.5.0\ivys\ivy.xml[0m
+[0m2021.10.18 14:13:07 INFO  [warn] ==== local-preloaded: tried[0m
+[0m2021.10.18 14:13:07 INFO  [warn]   file:/C:/Users/matth/.sbt/preloaded/net/liftweb/json/lift-json_2.12/3.5.0/lift-json_2.12-3.5.0.pom[0m
+[0m2021.10.18 14:13:07 INFO  [warn] 	::::::::::::::::::::::::::::::::::::::::::::::[0m
+[0m2021.10.18 14:13:07 INFO  [warn] 	::          UNRESOLVED DEPENDENCIES         ::[0m
+[0m2021.10.18 14:13:07 INFO  [warn] 	::::::::::::::::::::::::::::::::::::::::::::::[0m
+[0m2021.10.18 14:13:07 INFO  [warn] 	:: net.liftweb.json#lift-json_2.12;3.5.0: not found[0m
+[0m2021.10.18 14:13:07 INFO  [warn] 	::::::::::::::::::::::::::::::::::::::::::::::[0m
+[0m2021.10.18 14:13:07 INFO  [warn] [0m
+[0m2021.10.18 14:13:07 INFO  [warn] 	Note: Unresolved dependencies path:[0m
+[0m2021.10.18 14:13:07 INFO  [warn] 		net.liftweb.json:lift-json_2.12:3.5.0 (C:\Users\matth\revature\project0\build.sbt#L12)[0m
+[0m2021.10.18 14:13:07 INFO  [warn] 		  +- com.example:project0_2.12:0.1.0-SNAPSHOT[0m
+[0m2021.10.18 14:13:07 INFO  [error] sbt.librarymanagement.ResolveException: unresolved dependency: net.liftweb.json#lift-json_2.12;3.5.0: not found[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at sbt.internal.librarymanagement.IvyActions$.resolveAndRetrieve(IvyActions.scala:332)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at sbt.internal.librarymanagement.IvyActions$.$anonfun$updateEither$1(IvyActions.scala:208)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at sbt.internal.librarymanagement.IvySbt$Module.$anonfun$withModule$1(Ivy.scala:239)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at sbt.internal.librarymanagement.IvySbt.$anonfun$withIvy$1(Ivy.scala:204)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at sbt.internal.librarymanagement.IvySbt.sbt$internal$librarymanagement$IvySbt$$action$1(Ivy.scala:70)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at sbt.internal.librarymanagement.IvySbt$$anon$3.call(Ivy.scala:77)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at xsbt.boot.Locks$GlobalLock.withChannel$1(Locks.scala:95)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at xsbt.boot.Locks$GlobalLock.xsbt$boot$Locks$GlobalLock$$withChannelRetries$1(Locks.scala:80)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at xsbt.boot.Locks$GlobalLock$$anonfun$withFileLock$1.apply(Locks.scala:99)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at xsbt.boot.Using$.withResource(Using.scala:10)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at xsbt.boot.Using$.apply(Using.scala:9)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at xsbt.boot.Locks$GlobalLock.ignoringDeadlockAvoided(Locks.scala:60)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at xsbt.boot.Locks$GlobalLock.withLock(Locks.scala:50)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at xsbt.boot.Locks$.apply0(Locks.scala:31)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at xsbt.boot.Locks$.apply(Locks.scala:28)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at sbt.internal.librarymanagement.IvySbt.withDefaultLogger(Ivy.scala:77)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at sbt.internal.librarymanagement.IvySbt.withIvy(Ivy.scala:199)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at sbt.internal.librarymanagement.IvySbt.withIvy(Ivy.scala:196)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at sbt.internal.librarymanagement.IvySbt$Module.withModule(Ivy.scala:238)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at sbt.internal.librarymanagement.IvyActions$.updateEither(IvyActions.scala:193)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at sbt.librarymanagement.ivy.IvyDependencyResolution.update(IvyDependencyResolution.scala:20)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at sbt.librarymanagement.DependencyResolution.update(DependencyResolution.scala:56)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at sbt.internal.LibraryManagement$.resolve$1(LibraryManagement.scala:45)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$12(LibraryManagement.scala:93)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at sbt.util.Tracked$.$anonfun$lastOutput$1(Tracked.scala:68)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$19(LibraryManagement.scala:106)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at scala.util.control.Exception$Catch.apply(Exception.scala:224)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11(LibraryManagement.scala:106)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11$adapted(LibraryManagement.scala:89)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at sbt.util.Tracked$.$anonfun$inputChanged$1(Tracked.scala:149)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at sbt.internal.LibraryManagement$.cachedUpdate(LibraryManagement.scala:120)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at sbt.Classpaths$.$anonfun$updateTask$5(Defaults.scala:2561)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at scala.Function1.$anonfun$compose$1(Function1.scala:44)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:40)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at sbt.std.Transform$$anon$4.work(System.scala:67)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at sbt.Execute.$anonfun$submit$2(Execute.scala:269)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:16)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at sbt.Execute.work(Execute.scala:278)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at sbt.Execute.$anonfun$submit$1(Execute.scala:269)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:178)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at sbt.CompletionService$$anon$2.call(CompletionService.scala:37)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)[0m
+[0m2021.10.18 14:13:07 INFO  [error] 	at java.lang.Thread.run(Thread.java:748)[0m
+[0m2021.10.18 14:13:07 INFO  [error] (update) sbt.librarymanagement.ResolveException: unresolved dependency: net.liftweb.json#lift-json_2.12;3.5.0: not found[0m
+[0m2021.10.18 14:13:07 INFO  [error] Total time: 1 s, completed Oct 18, 2021 2:13:08 PM[0m
+[0m2021.10.18 14:13:08 INFO  time: ran 'sbt bloopInstall' in 12s[0m
+[0m2021.10.18 14:13:08 INFO  Disconnecting from Bloop session...[0m
+[0m2021.10.18 14:13:08 ERROR sbt command failed: C:\Users\matth\.jabba\jdk\adopt@1.8.0-292\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\matth\AppData\Local\Temp\metals3159304607232029676\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall[0m
+[0m2021.10.18 14:13:08 INFO  Shut down connection with build server.[0m
+[0m2021.10.18 14:13:08 INFO  Shut down connection with build server.[0m
+[0m2021.10.18 14:13:08 INFO  Attempting to connect to the build server...[0m
+[0m2021.10.18 14:13:09 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.10.18 14:13:09 INFO  Attempting to connect to the build server...[0m
+[0m2021.10.18 14:13:09 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.10.18 14:13:09 INFO  time: Connected to build server in 0.76s[0m
+[0m2021.10.18 14:13:09 INFO  Connected to Build server: Bloop v1.4.9[0m
+[0m2021.10.18 14:13:09 INFO  time: indexed workspace in 0.47s[0m
+[0m2021.10.18 14:13:09 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.18 14:13:10 INFO  no build target: using presentation compiler with only scala-library: 2.12.8[0m
+[0m2021.10.18 14:13:26 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.18 14:13:36 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.18 14:13:37 INFO  running 'C:\Users\matth\.jabba\jdk\adopt@1.8.0-292\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\matth\AppData\Local\Temp\metals1378457195618836771\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.10.18 14:13:40 INFO  [info] Loading settings for project project0-build-build from metals.sbt ...[0m
+[0m2021.10.18 14:13:40 INFO  [info] Loading project definition from C:\Users\matth\revature\project0\project\project[0m
+[0m2021.10.18 14:13:42 INFO  [info] Loading settings for project project0-build from metals.sbt ...[0m
+[0m2021.10.18 14:13:42 INFO  [info] Loading project definition from C:\Users\matth\revature\project0\project[0m
+[0m2021.10.18 14:13:45 INFO  [success] Generated .bloop\project0-build.json[0m
+[0m2021.10.18 14:13:45 INFO  [success] Total time: 3 s, completed Oct 18, 2021 2:13:45 PM[0m
+[0m2021.10.18 14:13:47 INFO  [info] Loading settings for project root from build.sbt ...[0m
+[0m2021.10.18 14:13:47 INFO  [info] Set current project to project0 (in build file:/C:/Users/matth/revature/project0/)[0m
+[0m2021.10.18 14:13:47 INFO  [info] Updating ...[0m
+[0m2021.10.18 14:13:47 INFO  [info] Done updating.[0m
+[0m2021.10.18 14:13:47 INFO  [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.[0m
+[0m2021.10.18 14:13:47 INFO  [success] Generated .bloop\root.json[0m
+[0m2021.10.18 14:13:47 INFO  [success] Generated .bloop\root-test.json[0m
+[0m2021.10.18 14:13:47 INFO  [success] Total time: 0 s, completed Oct 18, 2021 2:13:48 PM[0m
+[0m2021.10.18 14:13:48 INFO  time: ran 'sbt bloopInstall' in 11s[0m
+[0m2021.10.18 14:13:48 INFO  Disconnecting from Bloop session...[0m
+[0m2021.10.18 14:13:48 INFO  Shut down connection with build server.[0m
+[0m2021.10.18 14:13:48 INFO  Shut down connection with build server.[0m
+[0m2021.10.18 14:13:48 INFO  Attempting to connect to the build server...[0m
+[0m2021.10.18 14:13:48 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.10.18 14:13:48 INFO  Attempting to connect to the build server...[0m
+[0m2021.10.18 14:13:49 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.10.18 14:13:49 INFO  time: Connected to build server in 0.7s[0m
+[0m2021.10.18 14:13:49 INFO  Connected to Build server: Bloop v1.4.9[0m
+[0m2021.10.18 14:13:49 INFO  time: indexed workspace in 0.43s[0m
+[0m2021.10.18 14:13:49 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.18 14:13:50 INFO  no build target: using presentation compiler with only scala-library: 2.12.8[0m
+[0m2021.10.18 14:13:50 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.18 14:50:58 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 14:50:59 INFO  time: compiled root in 1.25s[0m
+[0m2021.10.18 15:15:38 INFO  shutting down Metals[0m
+[0m2021.10.18 15:15:38 INFO  Shut down connection with build server.[0m
+[0m2021.10.18 15:15:38 INFO  Shut down connection with build server.[0m
+[0m2021.10.18 15:15:52 INFO  Started: Metals version 0.10.7 in workspace 'C:\Users\matth\revature\project0' for client Visual Studio Code 1.61.1.[0m
+[0m2021.10.18 15:15:52 INFO  time: initialize in 0.61s[0m
+[0m2021.10.18 15:15:53 INFO  Attempting to connect to the build server...[0m
+[0m2021.10.18 15:15:53 WARN  no build target for: C:\Users\matth\revature\project0\src\main\scala\example\main.scala[0m
+[0m2021.10.18 15:15:53 INFO  skipping build import with status 'Installed'[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 11648'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:11648...
+The server is listening for incoming connections at tcp://127.0.0.1:11648...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.10.18 15:15:55 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.10.18 15:15:55 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 31413'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:31413...
+The server is listening for incoming connections at tcp://127.0.0.1:31413...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.10.18 15:15:56 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.10.18 15:15:56 INFO  time: Connected to build server in 2.86s[0m
+[0m2021.10.18 15:15:56 INFO  Connected to Build server: Bloop v1.4.9[0m
+[0m2021.10.18 15:15:57 INFO  no build target: using presentation compiler with only scala-library: 2.12.15[0m
+[0m2021.10.18 15:15:57 INFO  time: Imported build in 0.22s[0m
+[0m2021.10.18 15:15:58 INFO  no build target: using presentation compiler with only scala-library: 2.12.15[0m
+[0m2021.10.18 15:16:01 INFO  time: code lens generation in 6.65s[0m
+[0m2021.10.18 15:16:01 INFO  time: code lens generation in 6.73s[0m
+[0m2021.10.18 15:16:01 INFO  time: code lens generation in 2.83s[0m
+[0m2021.10.18 15:16:03 INFO  time: indexed workspace in 5.95s[0m
+[0m2021.10.18 15:16:04 INFO  no build target: using presentation compiler with only scala-library: 2.12.8[0m

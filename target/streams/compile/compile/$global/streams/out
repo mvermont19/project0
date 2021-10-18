@@ -1,6 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\matth\revature\project0\src\main\scala\example\main.scala:144:118: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : com.mongodb.client.model.BsonField[0m
-[0m[[0m[31merror[0m] [0m[0m required: String[0m
-[0m[[0m[31merror[0m] [0m[0m                    group("$name", Accumulators.sum("points", (Accumulators.sum("goals", "$goals") + Accumulators.sum("assists", "$assists")))),[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                                                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\matth\revature\project0\src\main\scala\example\main.scala:337:87: Missing conversion operator in '%'; use %% for literal %, %n for newline[0m
+[0m[[0m[31merror[0m] [0m[0m                  println(f"Player: ${teamDoc._id}, goals: ${teamDoc.goals}, Shooting %: $gpg%.2f")[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                      ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
