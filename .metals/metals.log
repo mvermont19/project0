@@ -40590,3 +40590,37 @@ Oct 18, 2021 4:33:02 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notif
 INFO: Unsupported notification method: $/setTrace
 [0m2021.10.18 17:04:28 INFO  compiling root (1 scala source)[0m
 [0m2021.10.18 17:04:28 INFO  time: compiled root in 0.4s[0m
+[0m2021.10.18 17:18:12 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 17:18:13 INFO  time: compiled root in 1.03s[0m
+[0m2021.10.18 17:19:18 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 17:19:18 INFO  time: compiled root in 0.41s[0m
+[0m2021.10.18 17:19:25 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 17:19:25 INFO  time: compiled root in 0.79s[0m
+[0m2021.10.18 17:22:36 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 17:22:36 INFO  time: compiled root in 0.56s[0m
+[0m2021.10.18 17:29:15 INFO  compiling root (1 scala source)[0m
+[0m2021.10.18 17:29:15 INFO  time: compiled root in 0.52s[0m
+[0m2021.10.18 17:48:46 INFO  shutting down Metals[0m
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+java.util.concurrent.RejectedExecutionException: Task scala.concurrent.impl.CallbackRunnable@12bb15c5 rejected from java.util.concurrent.ThreadPoolExecutor@1c7cf9e2[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 26416]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2063)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:830)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1379)
+	at scala.concurrent.impl.ExecutionContextImpl$$anon$4.execute(ExecutionContextImpl.scala:138)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:72)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1(Promise.scala:288)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1$adapted(Promise.scala:288)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:288)
+	at scala.concurrent.Promise.complete(Promise.scala:53)
+	at scala.concurrent.Promise.complete$(Promise.scala:52)
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:187)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)

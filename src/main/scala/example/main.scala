@@ -355,20 +355,28 @@ object Main {
                 //Create a player
                 println("Please give the players name: ")
                 var name: String = StdIn.readLine()
+                println(name)
                 println("Please give the players handedness (R or L): ")
                 var hand: String = StdIn.readLine()
+                println(hand)
                 println("Please give the players team: ")
                 var team: String = StdIn.readLine()
+                println(team)
                 println("Please give the players position: ")
                 var pos: String = StdIn.readLine()
+                println(pos)
                 println("Please give the players games played: ")
                 var gp: Int = StdIn.readInt()
+                println(gp)
                 println("Please give the players goals: ")
                 var goals: Int = StdIn.readInt()
+                println(goals)
                 println("Please give the players assists: ")
                 var assists: Int = StdIn.readInt()
+                println(assists)
                 println("Please give the players shots: ")
                 var shots: Int = StdIn.readInt()
+                println(shots)
 
                 var doc: Document = Document(
                   "_id" -> id1,
@@ -399,23 +407,32 @@ object Main {
                 while(!found){
                   println("Please give the players name: ")
                   name = StdIn.readLine()
-                  if(col.find(equal("name", name)).first() != null){
+                  println(name)
+                  try{
+                    col.find(equal("name", name)).first().printHeadResult()
                     found = true
                   }
+                  catch {
+                    case e: NullPointerException => {
+                      println("Please enter a valid player name")
+                    }
+                  }
                 }
-                col.find(equal("name", name)).first().printHeadResult()
                 println("What would you like to update about the player: ")
                 println("1. Goals \n2. Assists")
                 var choice: Int = StdIn.readInt() 
+                println(choice)
                 choice match {
                   case 1 => {
                     println("Please enter the new number of goals: ")
                     var g = StdIn.readInt()
+                    println(g)
                     col.updateOne(equal("name", name), set("goals", g)).printHeadResult("Update Result: ")
                   }
                   case 2 => {
                     println("Please enter the new number of assists: ")
                     var a = StdIn.readInt()
+                    println(a)
                     col.updateOne(equal("name", name), set("assists", a)).printHeadResult("Update Result: ")
                   }
                 }
@@ -424,9 +441,22 @@ object Main {
               }
               case 3 => {
                 //Delete a player
-                println("Please give the players name: ")
-                var name: String = StdIn.readLine()
-                col.find(equal("name", name)).first().printHeadResult()
+                var name: String = ""
+                var found = false
+                while(!found){
+                  println("Please give the players name: ")
+                  name = StdIn.readLine()
+                  println(name)
+                  try{
+                    col.find(equal("name", name)).first().printHeadResult()
+                    found = true
+                  }
+                  catch {
+                    case e: NullPointerException => {
+                      println("Please enter a valid player name")
+                    }
+                  }
+                }
                 col.deleteOne(equal("name", name)).printHeadResult("Delete Result: ")
               }
               case _ => println("Not a valid answer. Try again")
@@ -460,6 +490,7 @@ object Main {
         println(strings(0))
         println(strings(1))
         userInput = StdIn.readLine()
+        println(userInput)
         if(userInput.isEmpty())  {
           println("Please give an answer")
         }
