@@ -144,99 +144,15 @@ object Main {
             answer match {
               case 1 => {
                 //Points
-                val players = col
-                  .aggregate(
-                    Seq(
-                      Aggregates.group(
-                        "$name",
-                        Accumulators.sum("goals", "$goals"),
-                        Accumulators.sum("assists", "$assists")
-                      ),
-                      Aggregates.sort(orderBy(ascending("goals"), ascending("assists")))
-                    )
-                  ).results()
-
-                implicit val formats = DefaultFormats
-
-                case class Player(_id: String, goals: Int, assists: Int)
-
-                for (player <- players) {
-	                // Convert the doc into a proper JSON string.
-                  val jsonString = player.toJson()
-                  //println(jsonString)
-	                // Convert the JSON string into a JSON object.
-                  val jValue = parse(jsonString)
-                  // create a Player object from the string
-                  val playersDoc = jValue.extract[Player]
-	                // Calculate the total points and print.
-                  val total = playersDoc.goals + playersDoc.assists
-                  println(s"Player: ${playersDoc._id}, goals: ${playersDoc.goals}, assists: ${playersDoc.assists}, Total Points: $total")
-                }
+                getPlayerPoints(col)  
               }
               case 2 => {
                 //Shooting %
-                val players = col
-                  .aggregate(
-                    Seq(
-                      Aggregates.group(
-                        "$name",
-                        Accumulators.sum("goals", "$goals"),
-                        Accumulators.sum("shots", "$shots")
-                      ),
-                      Aggregates.sort(orderBy(ascending("goals")))
-                    )
-                  ).results()
-
-                implicit val formats = DefaultFormats
-
-                case class Player(_id: String, goals: Int, shots: Int)
-
-                for (player <- players) {
-	                // Convert the doc into a proper JSON string.
-                  val jsonString = player.toJson()
-                  //println(jsonString)
-	                // Convert the JSON string into a JSON object.
-                  val jValue = parse(jsonString)
-                  // create a Player object from the string
-                  val playersDoc = jValue.extract[Player]
-	                // Calculate the shooting % and print.
-                  var percent : Double = 0.0
-                  if(playersDoc.shots != 0){
-                    percent = (playersDoc.goals.toDouble / playersDoc.shots.toDouble) * 100
-                  } 
-                  println(f"Player: ${playersDoc._id}, goals: ${playersDoc.goals}, shots: ${playersDoc.shots}, Shooting Per: $percent%.2f")
-                }
+                getPlayerShooting(col)        
               }
               case 3 => {
                 //Goals per game
-                val players = col
-                  .aggregate(
-                    Seq(
-                      Aggregates.group(
-                        "$name",
-                        Accumulators.sum("goals", "$goals"),
-                        Accumulators.sum("games", "$games played")
-                      ),
-                      Aggregates.sort(orderBy(ascending("goals")))
-                    )
-                  ).results()
-
-                implicit val formats = DefaultFormats
-
-                case class Player(_id: String, goals: Int, games: Int)
-
-                for (player <- players) {
-	                // Convert the doc into a proper JSON string.
-                  val jsonString = player.toJson()
-                  //println(jsonString)
-	                // Convert the JSON string into a JSON object.
-                  val jValue = parse(jsonString)
-                  // create a Player object from the string
-                  val playersDoc = jValue.extract[Player]
-	                // Calculate the goals per game and print.
-                  val gpg = playersDoc.goals.toDouble / playersDoc.games.toDouble
-                  println(f"Player: ${playersDoc._id}, goals: ${playersDoc.goals}, games: ${playersDoc.games}, Goals per Game: $gpg%.2f")
-                }
+                getPlayerGPG(col)
               }
               case 4 => {
                 //L v R
@@ -279,63 +195,11 @@ object Main {
               }
               case 2 => {
                 //Shooting %
-                val teams = col
-                  .aggregate(
-                    Seq(
-                      Aggregates.group(
-                        "$team",
-                        Accumulators.sum("goals", "$goals"),
-                        Accumulators.sum("shots", "$shots")
-                      )
-                    )
-                  ).results()
-
-                implicit val formats = DefaultFormats
-
-                case class Team(_id: String, goals: Int, shots: Int)
-
-                for (team <- teams) {
-	                // Convert the doc into a proper JSON string.
-                  val jsonString = team.toJson()
-                  //println(jsonString)
-	                // Convert the JSON string into a JSON object.
-                  val jValue = parse(jsonString)
-                  // create a Team object from the string
-                  val teamDoc = jValue.extract[Team]
-	                // Calculate the shooting % and print.
-                  var percent = (teamDoc.goals.toDouble / teamDoc.shots.toDouble) * 100
-                  println(f"Player: ${teamDoc._id}, goals: ${teamDoc.goals}, shots: ${teamDoc.shots}, Shooting Per: $percent%.2f")
-                }
+                getTeamShooting(col)
               }
               case 3 => {
                 //Goals per game
-                val teams = col
-                  .aggregate(
-                    Seq(
-                      Aggregates.group(
-                        "$team",
-                        Accumulators.sum("goals", "$goals")
-                      )
-                    )
-                  ).results()
-
-                implicit val formats = DefaultFormats
-
-                case class Team(_id: String, goals: Int)
-
-                for (team <- teams) {
-	                // Convert the doc into a proper JSON string.
-                  val jsonString = team.toJson()
-                  //println(jsonString)
-	                // Convert the JSON string into a JSON object.
-                  val jValue = parse(jsonString)
-                  // create a Team object from the string
-                  val teamDoc = jValue.extract[Team]
-	                // Calculate the shooting % and print.
-                  //Because of the shortend season, each team only played 71 games
-                  var gpg = teamDoc.goals.toDouble / 71
-                  println(f"Player: ${teamDoc._id}, goals: ${teamDoc.goals}, Goals per Game: $gpg%.2f")
-                }
+                getTeamGPG(col)
               }
               case 4 =>{
                 //Player grouping
@@ -508,4 +372,176 @@ object Main {
       }
       answer
     }
+
+    /**
+      * Calculates and prints the players total amount of points
+      */
+
+      def getPlayerPoints(col : MongoCollection[Document]){
+        val players = col
+          .aggregate(
+            Seq(
+              Aggregates.group(
+                "$name",
+                Accumulators.sum("goals", "$goals"),
+                Accumulators.sum("assists", "$assists")
+              ),
+              Aggregates.sort(orderBy(ascending("goals"), ascending("assists")))
+            )
+          ).results()
+
+        implicit val formats = DefaultFormats
+
+        case class Player(_id: String, goals: Int, assists: Int)
+
+        for (player <- players) {
+	        // Convert the doc into a proper JSON string.
+          val jsonString = player.toJson()
+          //println(jsonString)
+	        // Convert the JSON string into a JSON object.
+          val jValue = parse(jsonString)
+          // create a Player object from the string
+          val playersDoc = jValue.extract[Player]
+	        // Calculate the total points and print.
+          val total = playersDoc.goals + playersDoc.assists
+          println(s"Player: ${playersDoc._id}, Goals: ${playersDoc.goals}, Assists: ${playersDoc.assists}, Total Points: $total")
+        }
+      }
+
+      /**
+        * Calculates and prints the players shooting percentage
+        */
+      def getPlayerShooting(col: MongoCollection[Document]){
+        val players = col
+                  .aggregate(
+                    Seq(
+                      Aggregates.group(
+                        "$name",
+                        Accumulators.sum("goals", "$goals"),
+                        Accumulators.sum("shots", "$shots")
+                      ),
+                      Aggregates.sort(orderBy(ascending("goals")))
+                    )
+                  ).results()
+
+                implicit val formats = DefaultFormats
+
+                case class Player(_id: String, goals: Int, shots: Int)
+
+                for (player <- players) {
+	                // Convert the doc into a proper JSON string.
+                  val jsonString = player.toJson()
+                  //println(jsonString)
+	                // Convert the JSON string into a JSON object.
+                  val jValue = parse(jsonString)
+                  // create a Player object from the string
+                  val playersDoc = jValue.extract[Player]
+	                // Calculate the shooting % and print.
+                  var percent : Double = 0.0
+                  if(playersDoc.shots != 0){
+                    percent = (playersDoc.goals.toDouble / playersDoc.shots.toDouble) * 100
+                  } 
+                  println(f"Player: ${playersDoc._id}, Goals: ${playersDoc.goals}, Shots: ${playersDoc.shots}, Shooting Per: $percent%.2f")
+                }
+      }
+
+      /**
+        * Calculates and prints all players goals per game
+        */
+      def getPlayerGPG(col: MongoCollection[Document]){
+        val players = col
+                  .aggregate(
+                    Seq(
+                      Aggregates.group(
+                        "$name",
+                        Accumulators.sum("goals", "$goals"),
+                        Accumulators.sum("games", "$games played")
+                      ),
+                      Aggregates.sort(orderBy(ascending("goals")))
+                    )
+                  ).results()
+
+                implicit val formats = DefaultFormats
+
+                case class Player(_id: String, goals: Int, games: Int)
+
+                for (player <- players) {
+	                // Convert the doc into a proper JSON string.
+                  val jsonString = player.toJson()
+                  //println(jsonString)
+	                // Convert the JSON string into a JSON object.
+                  val jValue = parse(jsonString)
+                  // create a Player object from the string
+                  val playersDoc = jValue.extract[Player]
+	                // Calculate the goals per game and print.
+                  val gpg = playersDoc.goals.toDouble / playersDoc.games.toDouble
+                  println(f"Player: ${playersDoc._id}, Goals: ${playersDoc.goals}, Games: ${playersDoc.games}, Goals per Game: $gpg%.2f")
+                }
+      }
+
+      /**
+        * Calculates and prints the team's shooting percentage
+        */
+      def getTeamShooting(col : MongoCollection[Document]){
+        val teams = col
+                  .aggregate(
+                    Seq(
+                      Aggregates.group(
+                        "$team",
+                        Accumulators.sum("goals", "$goals"),
+                        Accumulators.sum("shots", "$shots")
+                      )
+                    )
+                  ).results()
+
+                implicit val formats = DefaultFormats
+
+                case class Team(_id: String, goals: Int, shots: Int)
+
+                for (team <- teams) {
+	                // Convert the doc into a proper JSON string.
+                  val jsonString = team.toJson()
+                  //println(jsonString)
+	                // Convert the JSON string into a JSON object.
+                  val jValue = parse(jsonString)
+                  // create a Team object from the string
+                  val teamDoc = jValue.extract[Team]
+	                // Calculate the shooting % and print.
+                  var percent = (teamDoc.goals.toDouble / teamDoc.shots.toDouble) * 100
+                  println(f"Team: ${teamDoc._id}, Goals: ${teamDoc.goals}, Shots: ${teamDoc.shots}, Shooting Per: $percent%.2f")
+                }
+      }
+
+      /**
+        * Calculates and prints team's goals per game
+        */
+      def getTeamGPG(col : MongoCollection[Document]){
+                        val teams = col
+                  .aggregate(
+                    Seq(
+                      Aggregates.group(
+                        "$team",
+                        Accumulators.sum("goals", "$goals")
+                      )
+                    )
+                  ).results()
+
+                implicit val formats = DefaultFormats
+
+                case class Team(_id: String, goals: Int)
+
+                for (team <- teams) {
+	                // Convert the doc into a proper JSON string.
+                  val jsonString = team.toJson()
+                  //println(jsonString)
+	                // Convert the JSON string into a JSON object.
+                  val jValue = parse(jsonString)
+                  // create a Team object from the string
+                  val teamDoc = jValue.extract[Team]
+	                // Calculate the shooting % and print.
+                  //Because of the shortend season, each team only played 71 games
+                  var gpg = teamDoc.goals.toDouble / 71
+                  println(f"Team: ${teamDoc._id}, Goals: ${teamDoc.goals}, Goals per Game: $gpg%.2f")
+                }
+      }
 }

@@ -40624,3 +40624,86 @@ java.util.concurrent.RejectedExecutionException: Task scala.concurrent.impl.Call
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
+[0m2021.10.19 09:59:04 INFO  Started: Metals version 0.10.7 in workspace 'C:\Users\matth\revature\project0' for client Visual Studio Code 1.61.1.[0m
+[0m2021.10.19 09:59:04 INFO  time: initialize in 0.38s[0m
+[0m2021.10.19 09:59:04 INFO  Attempting to connect to the build server...[0m
+[0m2021.10.19 09:59:05 WARN  no build target for: C:\Users\matth\revature\project0\src\main\scala\example\main.scala[0m
+[0m2021.10.19 09:59:04 INFO  skipping build import with status 'Installed'[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 39085'...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+[0m2021.10.19 09:59:09 INFO  no build target: using presentation compiler with only scala-library: 2.12.15[0m
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+[0m2021.10.19 09:59:13 INFO  time: code lens generation in 5.03s[0m
+[0m2021.10.19 09:59:13 INFO  time: code lens generation in 6.68s[0m
+Waiting for the bsp connection to come up...
+No server running at 127.0.0.1:8212, let's fire one...
+Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.9...
+Starting bloop server at 127.0.0.1:8212...
+Attempting a connection to the server...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from 'c:\Users\matth\revature\project0\.bloop'...
+[0m[32m[D][0m Loading project from 'c:\Users\matth\revature\project0\.bloop\root-test.json'
+[0m[32m[D][0m Loading project from 'c:\Users\matth\revature\project0\.bloop\root.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.12.8.
+[0m[32m[D][0m   => C:\Users\matth\.ivy2\cache\jline\jline\jars\jline-2.14.6.jar
+[0m[32m[D][0m   => C:\Users\matth\.ivy2\cache\org.scala-lang.modules\scala-xml_2.12\bundles\scala-xml_2.12-1.0.6.jar
+[0m[32m[D][0m   => C:\Users\matth\.ivy2\cache\org.scala-lang\scala-compiler\jars\scala-compiler-2.12.8.jar
+[0m[32m[D][0m   => C:\Users\matth\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.12.8.jar
+[0m[32m[D][0m   => C:\Users\matth\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.12.8.jar
+[0m[32m[D][0m Configured SemanticDB in projects 'root', 'root-test'
+[0m[32m[D][0m Missing analysis file for project 'root-test'
+[0m[32m[D][0m Loading previous analysis for 'root' from 'C:\Users\matth\revature\project0\target\streams\compile\bloopAnalysisOut\$global\streams\inc_compile_2.12.zip'.
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:39085...
+The server is listening for incoming connections at tcp://127.0.0.1:39085...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.10.19 09:59:14 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.10.19 09:59:14 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 23023'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:23023...
+The server is listening for incoming connections at tcp://127.0.0.1:23023...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.10.19 09:59:15 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.10.19 09:59:15 INFO  time: Connected to build server in 10s[0m
+[0m2021.10.19 09:59:15 INFO  Connected to Build server: Bloop v1.4.9[0m
+[0m2021.10.19 09:59:15 INFO  time: Imported build in 0.14s[0m
+[0m2021.10.19 09:59:16 INFO  time: indexed workspace in 1.12s[0m
+[0m2021.10.19 09:59:17 INFO  no build target: using presentation compiler with only scala-library: 2.12.8[0m
+Oct 19, 2021 11:04:02 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 16
+[0m2021.10.19 11:04:20 INFO  compiling root (1 scala source)[0m
+[0m2021.10.19 11:04:26 INFO  time: compiled root in 5.7s[0m
+[0m2021.10.19 11:05:55 INFO  compiling root (1 scala source)[0m
+[0m2021.10.19 11:05:58 INFO  time: compiled root in 2.99s[0m
+[0m2021.10.19 11:06:39 INFO  compiling root (1 scala source)[0m
+[0m2021.10.19 11:06:42 INFO  time: compiled root in 3.1s[0m
+[0m2021.10.19 11:06:50 INFO  compiling root (1 scala source)[0m
+[0m2021.10.19 11:06:52 INFO  time: compiled root in 1.74s[0m
+[0m2021.10.19 11:07:24 INFO  compiling root (1 scala source)[0m
+[0m2021.10.19 11:07:26 INFO  time: compiled root in 1.27s[0m
+[0m2021.10.19 11:08:07 INFO  compiling root (1 scala source)[0m
+[0m2021.10.19 11:08:07 INFO  time: compiled root in 0.97s[0m
+[0m2021.10.19 11:11:23 INFO  compiling root (1 scala source)[0m
+[0m2021.10.19 11:11:23 INFO  time: compiled root in 1s[0m
+[0m2021.10.19 11:13:07 INFO  compiling root (1 scala source)[0m
+[0m2021.10.19 11:13:07 INFO  time: compiled root in 0.41s[0m
+[0m2021.10.19 11:13:55 INFO  compiling root (1 scala source)[0m
+[0m2021.10.19 11:13:55 INFO  time: compiled root in 0.84s[0m
+[0m2021.10.19 11:14:48 INFO  compiling root (1 scala source)[0m
+[0m2021.10.19 11:14:48 INFO  time: compiled root in 0.73s[0m
+[0m2021.10.19 11:15:42 INFO  compiling root (1 scala source)[0m
+[0m2021.10.19 11:15:42 INFO  time: compiled root in 0.77s[0m
+[0m2021.10.19 11:16:33 INFO  compiling root (1 scala source)[0m
+[0m2021.10.19 11:16:33 INFO  time: compiled root in 0.43s[0m
+[0m2021.10.19 11:17:52 INFO  compiling root (1 scala source)[0m
+[0m2021.10.19 11:17:52 INFO  time: compiled root in 0.62s[0m
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in Array[String]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 1585, 1585, 1598)
+Oct 19, 2021 11:19:41 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
