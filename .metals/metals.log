@@ -40707,3 +40707,259 @@ WARNING: Unmatched cancel notification for request id 16
 something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in Array[String]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 1585, 1585, 1598)
 Oct 19, 2021 11:19:41 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in org.mongodb.scala.MongoCollection[<error>]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 20187, 20187, 20212)
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in org.mongodb.scala.MongoCollection[<error>]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 20187, 20187, 20205)
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in org.mongodb.scala.MongoCollection[<error>]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 20187, 20187, 20212)
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in org.mongodb.scala.MongoCollection[<error>]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 20187, 20187, 20205)
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in org.mongodb.scala.MongoCollection[<error>]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 20187, 20187, 20212)
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in org.mongodb.scala.MongoCollection[<error>]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 20187, 20187, 20205)
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in org.mongodb.scala.MongoCollection[<error>]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 20187, 20187, 20206)
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in org.mongodb.scala.MongoCollection[javax.print.Doc]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 20187, 20187, 20207)
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in org.mongodb.scala.MongoCollection[org.mongodb.scala.Document]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 20187, 20187, 20212)
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in org.mongodb.scala.MongoCollection[org.mongodb.scala.Document]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 20187, 20187, 20212)
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in org.mongodb.scala.MongoCollection[org.mongodb.scala.Document]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 20187, 20187, 20212)
+[0m2021.10.19 11:24:30 INFO  compiling root (1 scala source)[0m
+[0m2021.10.19 11:24:30 INFO  time: compiled root in 0.56s[0m
+[0m2021.10.19 11:25:31 INFO  compiling root (1 scala source)[0m
+[0m2021.10.19 11:25:31 INFO  time: compiled root in 0.5s[0m
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in org.mongodb.scala.MongoCollection[<error>]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 18769, 18769, 18794)
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in org.mongodb.scala.MongoCollection[<error>]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 18769, 18769, 18787)
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in org.mongodb.scala.MongoCollection[<error>]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 18769, 18769, 18788)
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in org.mongodb.scala.MongoCollection[javax.print.Doc]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 18769, 18769, 18789)
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in org.mongodb.scala.MongoCollection[org.mongodb.scala.Document]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 18769, 18769, 18794)
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in org.mongodb.scala.MongoCollection[org.mongodb.scala.Document]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 18769, 18769, 18794)
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in org.mongodb.scala.MongoCollection[org.mongodb.scala.Document]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 18769, 18769, 18794)
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in org.mongodb.scala.MongoCollection[<error>]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 19060, 19060, 19085)
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in org.mongodb.scala.MongoCollection[<error>]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 19060, 19060, 19079)
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in org.mongodb.scala.MongoCollection[javax.print.Doc]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 19060, 19060, 19080)
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in org.mongodb.scala.MongoCollection[org.mongodb.scala.Document]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 19060, 19060, 19085)
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in org.mongodb.scala.MongoCollection[org.mongodb.scala.Document]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 19060, 19060, 19085)
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in org.mongodb.scala.MongoCollection[org.mongodb.scala.Document]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 19060, 19060, 19085)
+[0m2021.10.19 11:32:15 INFO  compiling root (1 scala source)[0m
+[0m2021.10.19 11:32:15 INFO  time: compiled root in 0.59s[0m
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in org.mongodb.scala.MongoCollection[<error>]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 19347, 19347, 19372)
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in org.mongodb.scala.MongoCollection[<error>]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 19347, 19347, 19365)
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in org.mongodb.scala.MongoCollection[javax.print.Doc]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 19347, 19347, 19367)
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in org.mongodb.scala.MongoCollection[org.mongodb.scala.Document]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 19347, 19347, 19372)
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in org.mongodb.scala.MongoCollection[org.mongodb.scala.Document]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 19347, 19347, 19372)
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in org.mongodb.scala.MongoCollection[org.mongodb.scala.Document]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 19347, 19347, 19372)
+[0m2021.10.19 11:35:44 INFO  compiling root (1 scala source)[0m
+[0m2021.10.19 11:35:44 INFO  time: compiled root in 0.47s[0m
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in org.mongodb.scala.MongoCollection[<error>]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 19566, 19566, 19591)
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in org.mongodb.scala.MongoCollection[<error>]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 19566, 19566, 19584)
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in org.mongodb.scala.MongoCollection[<error>]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 19566, 19566, 19585)
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in org.mongodb.scala.MongoCollection[org.mongodb.scala.Document]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 19566, 19566, 19591)
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in org.mongodb.scala.MongoCollection[org.mongodb.scala.Document]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 19566, 19566, 19591)
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in org.mongodb.scala.MongoCollection[org.mongodb.scala.Document]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 19566, 19566, 19591)
+[0m2021.10.19 11:37:25 INFO  compiling root (1 scala source)[0m
+[0m2021.10.19 11:37:25 INFO  time: compiled root in 0.74s[0m
+something's wrong: no file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala in org.mongodb.scala.MongoCollection[org.mongodb.scala.Document]RangePosition(file:///C:/Users/matth/revature/project0/src/main/scala/example/main.scala, 18212, 18212, 18237)
+[0m2021.10.19 11:39:12 INFO  compiling root (1 scala source)[0m
+[0m2021.10.19 11:39:12 INFO  time: compiled root in 0.51s[0m
+[0m2021.10.19 11:56:36 INFO  shutting down Metals[0m
+[0m2021.10.19 11:56:36 INFO  Shut down connection with build server.[0m
+[0m2021.10.19 11:56:36 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.10.19 17:34:33 INFO  Started: Metals version 0.10.7 in workspace 'C:\Users\matth\revature\project0' for client Visual Studio Code 1.61.1.[0m
+[0m2021.10.19 17:34:33 INFO  time: initialize in 0.45s[0m
+[0m2021.10.19 17:34:33 INFO  Attempting to connect to the build server...[0m
+[0m2021.10.19 17:34:33 WARN  no build target for: C:\Users\matth\revature\project0\src\main\scala\example\main.scala[0m
+[0m2021.10.19 17:34:33 INFO  skipping build import with status 'Installed'[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 35211'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:35211...
+The server is listening for incoming connections at tcp://127.0.0.1:35211...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.10.19 17:34:35 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.10.19 17:34:35 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 32894'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:32894...
+The server is listening for incoming connections at tcp://127.0.0.1:32894...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.10.19 17:34:36 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.10.19 17:34:36 INFO  time: Connected to build server in 2.73s[0m
+[0m2021.10.19 17:34:36 INFO  Connected to Build server: Bloop v1.4.9[0m
+Oct 19, 2021 5:34:37 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+[0m2021.10.19 17:34:38 INFO  no build target: using presentation compiler with only scala-library: 2.12.15[0m
+[0m2021.10.19 17:34:38 INFO  time: Imported build in 0.3s[0m
+[0m2021.10.19 17:34:39 INFO  no build target: using presentation compiler with only scala-library: 2.12.15[0m
+[0m2021.10.19 17:34:42 INFO  time: code lens generation in 5.61s[0m
+[0m2021.10.19 17:34:42 INFO  time: code lens generation in 6.74s[0m
+[0m2021.10.19 17:34:43 INFO  time: indexed workspace in 4.33s[0m
+[0m2021.10.19 17:34:43 INFO  no build target: using presentation compiler with only scala-library: 2.12.8[0m
+[0m2021.10.20 10:01:23 INFO  shutting down Metals[0m
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the client stdin, exiting...
+[0m2021.10.20 10:01:23 ERROR build shutdown: bloop
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: An established connection was aborted by the software in your host machine
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1928)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1(BuildServerConnection.scala:88)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1$adapted(BuildServerConnection.scala:85)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: An established connection was aborted by the software in your host machine
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:161)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
+	at com.sun.proxy.$Proxy8.buildShutdown(null)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1(BuildServerConnection.scala:88)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1$adapted(BuildServerConnection.scala:85)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+	at sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:470)
+	at sun.nio.ch.SinkChannelImpl.write(SinkChannelImpl.java:114)
+	at java.nio.channels.Channels.writeFullyImpl(Channels.java:78)
+	at java.nio.channels.Channels.writeFully(Channels.java:98)
+	at java.nio.channels.Channels.access$000(Channels.java:61)
+	at java.nio.channels.Channels$1.write(Channels.java:174)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at java.nio.channels.Channels$1.write(Channels.java:155)
+	at scala.meta.internal.metals.ClosableOutputStream.write(ClosableOutputStream.scala:26)
+	at java.io.FilterOutputStream.write(FilterOutputStream.java:125)
+	at java.io.FilterOutputStream.write(FilterOutputStream.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:68)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:161)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
+	at com.sun.proxy.$Proxy8.buildShutdown(null)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1(BuildServerConnection.scala:88)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1$adapted(BuildServerConnection.scala:85)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+[0m2021.10.20 10:01:23 ERROR build shutdown: bloop
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: An established connection was aborted by the software in your host machine
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1928)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1(BuildServerConnection.scala:88)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1$adapted(BuildServerConnection.scala:85)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: An established connection was aborted by the software in your host machine
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:161)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
+	at com.sun.proxy.$Proxy8.buildShutdown(null)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1(BuildServerConnection.scala:88)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1$adapted(BuildServerConnection.scala:85)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+	at sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:470)
+	at sun.nio.ch.SinkChannelImpl.write(SinkChannelImpl.java:114)
+	at java.nio.channels.Channels.writeFullyImpl(Channels.java:78)
+	at java.nio.channels.Channels.writeFully(Channels.java:98)
+	at java.nio.channels.Channels.access$000(Channels.java:61)
+	at java.nio.channels.Channels$1.write(Channels.java:174)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at java.nio.channels.Channels$1.write(Channels.java:155)
+	at scala.meta.internal.metals.ClosableOutputStream.write(ClosableOutputStream.scala:26)
+	at java.io.FilterOutputStream.write(FilterOutputStream.java:125)
+	at java.io.FilterOutputStream.write(FilterOutputStream.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:68)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:161)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
+	at com.sun.proxy.$Proxy8.buildShutdown(null)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1(BuildServerConnection.scala:88)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1$adapted(BuildServerConnection.scala:85)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+[0m2021.10.20 10:01:36 INFO  Started: Metals version 0.10.7 in workspace 'C:\Users\matth\revature\project0' for client Visual Studio Code 1.61.1.[0m
+[0m2021.10.20 10:01:37 INFO  time: initialize in 0.57s[0m
+[0m2021.10.20 10:01:38 INFO  Attempting to connect to the build server...[0m
+[0m2021.10.20 10:01:37 WARN  no build target for: C:\Users\matth\revature\project0\src\main\scala\example\main.scala[0m
+[0m2021.10.20 10:01:38 INFO  skipping build import with status 'Installed'[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 15954'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:15954...
+The server is listening for incoming connections at tcp://127.0.0.1:15954...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.10.20 10:01:40 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.10.20 10:01:40 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 16402'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:16402...
+The server is listening for incoming connections at tcp://127.0.0.1:16402...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.10.20 10:01:41 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.10.20 10:01:41 INFO  time: Connected to build server in 3s[0m
+[0m2021.10.20 10:01:41 INFO  Connected to Build server: Bloop v1.4.9[0m
+[0m2021.10.20 10:01:42 INFO  no build target: using presentation compiler with only scala-library: 2.12.15[0m
+[0m2021.10.20 10:01:42 INFO  no build target: using presentation compiler with only scala-library: 2.12.15[0m
+[0m2021.10.20 10:01:45 INFO  time: code lens generation in 5.72s[0m
+[0m2021.10.20 10:01:45 INFO  time: code lens generation in 5.94s[0m
+[0m2021.10.20 10:01:46 INFO  time: indexed workspace in 4.43s[0m
+[0m2021.10.20 10:01:47 INFO  no build target: using presentation compiler with only scala-library: 2.12.8[0m
